@@ -107,16 +107,45 @@
     return LANG === 'en' ? g.folder_en : g.folder_zh;
   }
 
+  function wallColumns() {
+    var w = window.innerWidth;
+    return w <= 460 ? 1 : (w <= 860 ? 2 : 3);
+  }
+
+  function tileMarkup(g, i) {
+    var ratio = (g.w && g.h) ? (' style="aspect-ratio:' + g.w + '/' + g.h + '"') : '';
+    var name = folderName(g);
+    return '<button class="tile rv" type="button" data-i="' + i + '" aria-label="' + name + '">' +
+           '<img src="' + g.thumb + '" alt="' + name + '" loading="lazy" decoding="async"' + ratio + '>' +
+           '<span class="tile__cat">' + name + '</span>' +
+           '</button>';
+  }
+
+  var wallCols = 0;
+
   function renderWall(cat) {
-    GAL = DATA.gallery.filter(function (g) { return cat === 'all' || g.cat === cat; });
-    $('#wall').innerHTML = GAL.map(function (g, i) {
-      var ratio = (g.w && g.h) ? (' style="aspect-ratio:' + g.w + '/' + g.h + '"') : '';
-      var name = folderName(g);
-      return '<button class="tile rv" type="button" data-i="' + i + '" aria-label="' + name + '">' +
-             '<img src="' + g.thumb + '" alt="' + name + '" loading="lazy" decoding="async"' + ratio + '>' +
-             '<span class="tile__cat">' + name + '</span>' +
-             '</button>';
+    if (cat != null) {
+      GAL = DATA.gallery.filter(function (g) { return cat === 'all' || g.cat === cat; });
+    }
+    var n = wallColumns();
+    wallCols = n;
+
+    // shortest-column placement, walking the list in order
+    var cols = [], heights = [];
+    for (var c = 0; c < n; c++) { cols.push([]); heights.push(0); }
+    GAL.forEach(function (g, i) {
+      var shortest = 0;
+      for (var c = 1; c < n; c++) {
+        if (heights[c] < heights[shortest]) shortest = c;
+      }
+      cols[shortest].push(tileMarkup(g, i));
+      heights[shortest] += (g.w && g.h) ? (g.h / g.w) : 1;   // normalized height
+    });
+
+    $('#wall').innerHTML = cols.map(function (items) {
+      return '<div class="wall__col">' + items.join('') + '</div>';
     }).join('');
+
     observeReveals($('#wall'));
     $('#galCount').textContent = t('gal_aside').replace('{n}', GAL.length);
   }
@@ -379,6 +408,15 @@
         }
       });
     });
+
+    // re-flow the wall only when the column count actually changes
+    var rt;
+    window.addEventListener('resize', function () {
+      clearTimeout(rt);
+      rt = setTimeout(function () {
+        if (wallColumns() !== wallCols) renderWall(null);
+      }, 180);
+    }, { passive: true });
 
     var burger = $('#burger');
     var links = $('#navLinks');

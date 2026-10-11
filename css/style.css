@@ -358,17 +358,23 @@ section{position:relative;z-index:2}
 }
 
 /* ---------- 9b. Gallery wall (masonry) ---------- */
+/* JS places each tile into whichever column is currently shortest, so the
+   reading order runs left-to-right while columns stay balanced and gap-free.
+   CSS `columns` would fill each column top-to-bottom instead, which turns a
+   folder-ordered list into one subject per column. */
 .wall{
-  column-count:3;
-  column-gap:clamp(10px,1.4vw,20px);
+  display:flex;
+  align-items:flex-start;
+  gap:clamp(10px,1.4vw,20px);
 }
-@media (max-width:860px){ .wall{column-count:2} }
-@media (max-width:460px){ .wall{column-count:1} }
+.wall__col{
+  flex:1 1 0;min-width:0;
+  display:flex;flex-direction:column;
+  gap:clamp(10px,1.4vw,20px);
+}
 
 .tile{
-  display:block;width:100%;padding:0;border:0;
-  margin:0 0 clamp(10px,1.3vw,18px);
-  break-inside:avoid;page-break-inside:avoid;
+  display:block;width:100%;padding:0;border:0;margin:0;
   position:relative;overflow:hidden;border-radius:3px;
   background:var(--ink-800);
   border:1px solid var(--line-soft);

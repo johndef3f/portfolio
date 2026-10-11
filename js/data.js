@@ -583,54 +583,414 @@ var DATA = {
    "en": "Environment"
   },
   {
-   "id": "gameui",
-   "zh": "遊戲介面",
-   "en": "Game UI"
-  },
-  {
-   "id": "appui",
-   "zh": "行動介面",
-   "en": "Mobile UI"
-  },
-  {
-   "id": "webui",
-   "zh": "網站介面",
-   "en": "Web UI"
-  },
-  {
    "id": "mexico",
    "zh": "UE 場景",
    "en": "UE Scene"
+  },
+  {
+   "id": "appui",
+   "zh": "手機介面",
+   "en": "Mobile UI"
+  },
+  {
+   "id": "gameui",
+   "zh": "遊戲設計",
+   "en": "Game UI"
+  },
+  {
+   "id": "webui",
+   "zh": "電腦網站",
+   "en": "Web UI"
   }
  ],
  "gallery": [
   {
    "id": "character-01",
    "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
+   "folder_zh": "Zatkalun Tribe 角色設計",
+   "folder_en": "Zatkalun Tribe — Character Design",
    "src": "assets/img/character-01.jpg",
    "thumb": "assets/img/character-01-t.jpg",
    "w": 5031,
    "h": 3579
   },
   {
-   "id": "appui-04",
-   "cat": "appui",
-   "folder_zh": "手機介面",
-   "folder_en": "Mobile Interface",
-   "src": "assets/img/appui-04.jpg",
-   "thumb": "assets/img/appui-04-t.jpg",
-   "w": 1080,
-   "h": 1920
+   "id": "character-02",
+   "cat": "character",
+   "folder_zh": "Zatkalun Tribe 角色設計",
+   "folder_en": "Zatkalun Tribe — Character Design",
+   "src": "assets/img/character-02.jpg",
+   "thumb": "assets/img/character-02-t.jpg",
+   "w": 4962,
+   "h": 3509
+  },
+  {
+   "id": "character-03",
+   "cat": "character",
+   "folder_zh": "Zatkalun Tribe 角色設計",
+   "folder_en": "Zatkalun Tribe — Character Design",
+   "src": "assets/img/character-03.jpg",
+   "thumb": "assets/img/character-03-t.jpg",
+   "w": 4962,
+   "h": 3509
+  },
+  {
+   "id": "character-04",
+   "cat": "character",
+   "folder_zh": "Zatkalun Tribe 角色設計",
+   "folder_en": "Zatkalun Tribe — Character Design",
+   "src": "assets/img/character-04.jpg",
+   "thumb": "assets/img/character-04-t.jpg",
+   "w": 5031,
+   "h": 3579
+  },
+  {
+   "id": "character-05",
+   "cat": "character",
+   "folder_zh": "Zatkalun Tribe 角色設計",
+   "folder_en": "Zatkalun Tribe — Character Design",
+   "src": "assets/img/character-05.jpg",
+   "thumb": "assets/img/character-05-t.jpg",
+   "w": 5031,
+   "h": 3579
+  },
+  {
+   "id": "character-06",
+   "cat": "character",
+   "folder_zh": "Zatkalun Tribe 角色設計",
+   "folder_en": "Zatkalun Tribe — Character Design",
+   "src": "assets/img/character-06.jpg",
+   "thumb": "assets/img/character-06-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-07",
+   "cat": "character",
+   "folder_zh": "墨西哥板玩具總動員_角色設計",
+   "folder_en": "Mexican Toy Story — Character Design",
+   "src": "assets/img/character-07.jpg",
+   "thumb": "assets/img/character-07-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-08",
+   "cat": "character",
+   "folder_zh": "墨西哥板玩具總動員_角色設計",
+   "folder_en": "Mexican Toy Story — Character Design",
+   "src": "assets/img/character-08.jpg",
+   "thumb": "assets/img/character-08-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-09",
+   "cat": "character",
+   "folder_zh": "墨西哥板玩具總動員_角色設計",
+   "folder_en": "Mexican Toy Story — Character Design",
+   "src": "assets/img/character-09.jpg",
+   "thumb": "assets/img/character-09-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-10",
+   "cat": "character",
+   "folder_zh": "墨西哥板玩具總動員_角色設計",
+   "folder_en": "Mexican Toy Story — Character Design",
+   "src": "assets/img/character-10.jpg",
+   "thumb": "assets/img/character-10-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-11",
+   "cat": "character",
+   "folder_zh": "遊戲美術_殘序之境角色設計",
+   "folder_en": "Realm of Remnants — Character Design",
+   "src": "assets/img/character-11.jpg",
+   "thumb": "assets/img/character-11-t.jpg",
+   "w": 5193,
+   "h": 4453
+  },
+  {
+   "id": "character-12",
+   "cat": "character",
+   "folder_zh": "遊戲美術_殘序之境角色設計",
+   "folder_en": "Realm of Remnants — Character Design",
+   "src": "assets/img/character-12.jpg",
+   "thumb": "assets/img/character-12-t.jpg",
+   "w": 1263,
+   "h": 824
+  },
+  {
+   "id": "character-13",
+   "cat": "character",
+   "folder_zh": "遊戲美術_殘序之境角色設計",
+   "folder_en": "Realm of Remnants — Character Design",
+   "src": "assets/img/character-13.jpg",
+   "thumb": "assets/img/character-13-t.jpg",
+   "w": 1259,
+   "h": 819
+  },
+  {
+   "id": "character-14",
+   "cat": "character",
+   "folder_zh": "遊戲美術_殘序之境角色設計",
+   "folder_en": "Realm of Remnants — Character Design",
+   "src": "assets/img/character-14.jpg",
+   "thumb": "assets/img/character-14-t.jpg",
+   "w": 1385,
+   "h": 829
+  },
+  {
+   "id": "character-15",
+   "cat": "character",
+   "folder_zh": "遊戲美術_殘序之境角色設計",
+   "folder_en": "Realm of Remnants — Character Design",
+   "src": "assets/img/character-15.jpg",
+   "thumb": "assets/img/character-15-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-16",
+   "cat": "character",
+   "folder_zh": "遊戲美術_殘序之境角色設計",
+   "folder_en": "Realm of Remnants — Character Design",
+   "src": "assets/img/character-16.jpg",
+   "thumb": "assets/img/character-16-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "scene-01",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-01.jpg",
+   "thumb": "assets/img/scene-01-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-02",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-02.jpg",
+   "thumb": "assets/img/scene-02-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-03",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-03.jpg",
+   "thumb": "assets/img/scene-03-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-04",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-04.jpg",
+   "thumb": "assets/img/scene-04-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-05",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-05.jpg",
+   "thumb": "assets/img/scene-05-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-06",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-06.jpg",
+   "thumb": "assets/img/scene-06-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-07",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-07.jpg",
+   "thumb": "assets/img/scene-07-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-08",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-08.jpg",
+   "thumb": "assets/img/scene-08-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-09",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-09.jpg",
+   "thumb": "assets/img/scene-09-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-10",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-10.jpg",
+   "thumb": "assets/img/scene-10-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-11",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-11.jpg",
+   "thumb": "assets/img/scene-11-t.jpg",
+   "w": 2016,
+   "h": 1134
   },
   {
    "id": "scene-12",
    "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
    "src": "assets/img/scene-12.jpg",
    "thumb": "assets/img/scene-12-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-13",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-13.jpg",
+   "thumb": "assets/img/scene-13-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-14",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-14.jpg",
+   "thumb": "assets/img/scene-14-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-15",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-15.jpg",
+   "thumb": "assets/img/scene-15-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-16",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-16.jpg",
+   "thumb": "assets/img/scene-16-t.jpg",
+   "w": 1512,
+   "h": 1134
+  },
+  {
+   "id": "scene-17",
+   "cat": "scene",
+   "folder_zh": "Cover life_場景設計",
+   "folder_en": "Cover life — Environment Design",
+   "src": "assets/img/scene-17.jpg",
+   "thumb": "assets/img/scene-17-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "scene-18",
+   "cat": "scene",
+   "folder_zh": "遊戲美術_場景設計",
+   "folder_en": "Game Art — Environment Design",
+   "src": "assets/img/scene-18.jpg",
+   "thumb": "assets/img/scene-18-t.jpg",
+   "w": 1191,
+   "h": 842
+  },
+  {
+   "id": "scene-19",
+   "cat": "scene",
+   "folder_zh": "遊戲美術_場景設計",
+   "folder_en": "Game Art — Environment Design",
+   "src": "assets/img/scene-19.jpg",
+   "thumb": "assets/img/scene-19-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "scene-20",
+   "cat": "scene",
+   "folder_zh": "遊戲美術_場景設計",
+   "folder_en": "Game Art — Environment Design",
+   "src": "assets/img/scene-20.jpg",
+   "thumb": "assets/img/scene-20-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "scene-21",
+   "cat": "scene",
+   "folder_zh": "遊戲美術_場景設計",
+   "folder_en": "Game Art — Environment Design",
+   "src": "assets/img/scene-21.jpg",
+   "thumb": "assets/img/scene-21-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "scene-22",
+   "cat": "scene",
+   "folder_zh": "遊戲美術_場景設計",
+   "folder_en": "Game Art — Environment Design",
+   "src": "assets/img/scene-22.jpg",
+   "thumb": "assets/img/scene-22-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "scene-23",
+   "cat": "scene",
+   "folder_zh": "遊戲美術_場景設計",
+   "folder_en": "Game Art — Environment Design",
+   "src": "assets/img/scene-23.jpg",
+   "thumb": "assets/img/scene-23-t.jpg",
    "w": 4961,
    "h": 3508
   },
@@ -645,96 +1005,6 @@ var DATA = {
    "h": 825
   },
   {
-   "id": "webui-01",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-01.jpg",
-   "thumb": "assets/img/webui-01-t.jpg",
-   "w": 1581,
-   "h": 890
-  },
-  {
-   "id": "character-06",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-06.jpg",
-   "thumb": "assets/img/character-06-t.jpg",
-   "w": 5031,
-   "h": 3579
-  },
-  {
-   "id": "webui-02",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-02.jpg",
-   "thumb": "assets/img/webui-02-t.jpg",
-   "w": 1875,
-   "h": 1055
-  },
-  {
-   "id": "scene-13",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-13.jpg",
-   "thumb": "assets/img/scene-13-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-03",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-03.jpg",
-   "thumb": "assets/img/character-03-t.jpg",
-   "w": 4962,
-   "h": 3509
-  },
-  {
-   "id": "gameui-03",
-   "cat": "gameui",
-   "folder_zh": "遊戲設計",
-   "folder_en": "Game Design",
-   "src": "assets/img/gameui-03.jpg",
-   "thumb": "assets/img/gameui-03-t.jpg",
-   "w": 1919,
-   "h": 1079
-  },
-  {
-   "id": "scene-10",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-10.jpg",
-   "thumb": "assets/img/scene-10-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-02",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-02.jpg",
-   "thumb": "assets/img/character-02-t.jpg",
-   "w": 4962,
-   "h": 3509
-  },
-  {
-   "id": "appui-01",
-   "cat": "appui",
-   "folder_zh": "手機介面",
-   "folder_en": "Mobile Interface",
-   "src": "assets/img/appui-01.jpg",
-   "thumb": "assets/img/appui-01-t.jpg",
-   "w": 1080,
-   "h": 1920
-  },
-  {
    "id": "mexico-02",
    "cat": "mexico",
    "folder_zh": "Mexico_UE_project",
@@ -743,106 +1013,6 @@ var DATA = {
    "thumb": "assets/img/mexico-02-t.jpg",
    "w": 1972,
    "h": 825
-  },
-  {
-   "id": "webui-08",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-08.jpg",
-   "thumb": "assets/img/webui-08-t.jpg",
-   "w": 1882,
-   "h": 1062
-  },
-  {
-   "id": "gameui-04",
-   "cat": "gameui",
-   "folder_zh": "遊戲設計",
-   "folder_en": "Game Design",
-   "src": "assets/img/gameui-04.jpg",
-   "thumb": "assets/img/gameui-04-t.jpg",
-   "w": 1441,
-   "h": 875
-  },
-  {
-   "id": "scene-04",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-04.jpg",
-   "thumb": "assets/img/scene-04-t.jpg",
-   "w": 1191,
-   "h": 842
-  },
-  {
-   "id": "character-07",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-07.jpg",
-   "thumb": "assets/img/character-07-t.jpg",
-   "w": 5031,
-   "h": 3579
-  },
-  {
-   "id": "character-11",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-11.jpg",
-   "thumb": "assets/img/character-11-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "scene-11",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-11.jpg",
-   "thumb": "assets/img/scene-11-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "character-12",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-12.jpg",
-   "thumb": "assets/img/character-12-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "appui-05",
-   "cat": "appui",
-   "folder_zh": "手機介面",
-   "folder_en": "Mobile Interface",
-   "src": "assets/img/appui-05.jpg",
-   "thumb": "assets/img/appui-05-t.jpg",
-   "w": 1080,
-   "h": 1920
-  },
-  {
-   "id": "scene-01",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-01.jpg",
-   "thumb": "assets/img/scene-01-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "webui-03",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-03.jpg",
-   "thumb": "assets/img/webui-03-t.jpg",
-   "w": 1884,
-   "h": 1061
   },
   {
    "id": "mexico-03",
@@ -855,46 +1025,6 @@ var DATA = {
    "h": 825
   },
   {
-   "id": "gameui-01",
-   "cat": "gameui",
-   "folder_zh": "遊戲設計",
-   "folder_en": "Game Design",
-   "src": "assets/img/gameui-01.jpg",
-   "thumb": "assets/img/gameui-01-t.jpg",
-   "w": 1877,
-   "h": 1043
-  },
-  {
-   "id": "character-10",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-10.jpg",
-   "thumb": "assets/img/character-10-t.jpg",
-   "w": 1385,
-   "h": 829
-  },
-  {
-   "id": "scene-09",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-09.jpg",
-   "thumb": "assets/img/scene-09-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "webui-05",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-05.jpg",
-   "thumb": "assets/img/webui-05-t.jpg",
-   "w": 1882,
-   "h": 1056
-  },
-  {
    "id": "mexico-04",
    "cat": "mexico",
    "folder_zh": "Mexico_UE_project",
@@ -903,136 +1033,6 @@ var DATA = {
    "thumb": "assets/img/mexico-04-t.jpg",
    "w": 1972,
    "h": 825
-  },
-  {
-   "id": "character-08",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-08.jpg",
-   "thumb": "assets/img/character-08-t.jpg",
-   "w": 1263,
-   "h": 824
-  },
-  {
-   "id": "appui-03",
-   "cat": "appui",
-   "folder_zh": "手機介面",
-   "folder_en": "Mobile Interface",
-   "src": "assets/img/appui-03.jpg",
-   "thumb": "assets/img/appui-03-t.jpg",
-   "w": 1080,
-   "h": 1920
-  },
-  {
-   "id": "webui-04",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-04.jpg",
-   "thumb": "assets/img/webui-04-t.jpg",
-   "w": 1883,
-   "h": 1061
-  },
-  {
-   "id": "scene-06",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-06.jpg",
-   "thumb": "assets/img/scene-06-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "character-09",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-09.jpg",
-   "thumb": "assets/img/character-09-t.jpg",
-   "w": 1259,
-   "h": 819
-  },
-  {
-   "id": "gameui-02",
-   "cat": "gameui",
-   "folder_zh": "遊戲設計",
-   "folder_en": "Game Design",
-   "src": "assets/img/gameui-02.jpg",
-   "thumb": "assets/img/gameui-02-t.jpg",
-   "w": 1872,
-   "h": 1050
-  },
-  {
-   "id": "scene-08",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-08.jpg",
-   "thumb": "assets/img/scene-08-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "webui-06",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-06.jpg",
-   "thumb": "assets/img/webui-06-t.jpg",
-   "w": 1879,
-   "h": 1059
-  },
-  {
-   "id": "character-05",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-05.jpg",
-   "thumb": "assets/img/character-05-t.jpg",
-   "w": 5193,
-   "h": 4453
-  },
-  {
-   "id": "scene-03",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-03.jpg",
-   "thumb": "assets/img/scene-03-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "character-14",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-14.jpg",
-   "thumb": "assets/img/character-14-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "appui-06",
-   "cat": "appui",
-   "folder_zh": "手機介面",
-   "folder_en": "Mobile Interface",
-   "src": "assets/img/appui-06.jpg",
-   "thumb": "assets/img/appui-06-t.jpg",
-   "w": 3078,
-   "h": 5460
-  },
-  {
-   "id": "scene-02",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-02.jpg",
-   "thumb": "assets/img/scene-02-t.jpg",
-   "w": 2016,
-   "h": 1134
   },
   {
    "id": "mexico-05",
@@ -1045,34 +1045,114 @@ var DATA = {
    "h": 825
   },
   {
-   "id": "character-13",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-13.jpg",
-   "thumb": "assets/img/character-13-t.jpg",
-   "w": 4961,
-   "h": 3508
+   "id": "mexico-06",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-06.jpg",
+   "thumb": "assets/img/mexico-06-t.jpg",
+   "w": 1972,
+   "h": 825
+  },
+  {
+   "id": "appui-01",
+   "cat": "appui",
+   "folder_zh": "測驗ui介面設計",
+   "folder_en": "Quiz App — UI Design",
+   "src": "assets/img/appui-01.jpg",
+   "thumb": "assets/img/appui-01-t.jpg",
+   "w": 1080,
+   "h": 1920
   },
   {
    "id": "appui-02",
    "cat": "appui",
-   "folder_zh": "手機介面",
-   "folder_en": "Mobile Interface",
+   "folder_zh": "測驗ui介面設計",
+   "folder_en": "Quiz App — UI Design",
    "src": "assets/img/appui-02.jpg",
    "thumb": "assets/img/appui-02-t.jpg",
+   "w": 1080,
+   "h": 1920
+  },
+  {
+   "id": "appui-03",
+   "cat": "appui",
+   "folder_zh": "測驗ui介面設計",
+   "folder_en": "Quiz App — UI Design",
+   "src": "assets/img/appui-03.jpg",
+   "thumb": "assets/img/appui-03-t.jpg",
+   "w": 1080,
+   "h": 1920
+  },
+  {
+   "id": "appui-04",
+   "cat": "appui",
+   "folder_zh": "測驗ui介面設計",
+   "folder_en": "Quiz App — UI Design",
+   "src": "assets/img/appui-04.jpg",
+   "thumb": "assets/img/appui-04-t.jpg",
+   "w": 1080,
+   "h": 1920
+  },
+  {
+   "id": "appui-05",
+   "cat": "appui",
+   "folder_zh": "測驗ui介面設計",
+   "folder_en": "Quiz App — UI Design",
+   "src": "assets/img/appui-05.jpg",
+   "thumb": "assets/img/appui-05-t.jpg",
+   "w": 3078,
+   "h": 5460
+  },
+  {
+   "id": "appui-06",
+   "cat": "appui",
+   "folder_zh": "產品ui介面設計",
+   "folder_en": "Product UI Design",
+   "src": "assets/img/appui-06.jpg",
+   "thumb": "assets/img/appui-06-t.jpg",
    "w": 10631,
    "h": 7079
   },
   {
-   "id": "webui-07",
-   "cat": "webui",
-   "folder_zh": "電腦網站",
-   "folder_en": "Web",
-   "src": "assets/img/webui-07.jpg",
-   "thumb": "assets/img/webui-07-t.jpg",
-   "w": 1881,
-   "h": 1058
+   "id": "gameui-01",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-01.jpg",
+   "thumb": "assets/img/gameui-01-t.jpg",
+   "w": 1877,
+   "h": 1043
+  },
+  {
+   "id": "gameui-02",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-02.jpg",
+   "thumb": "assets/img/gameui-02-t.jpg",
+   "w": 1872,
+   "h": 1050
+  },
+  {
+   "id": "gameui-03",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-03.jpg",
+   "thumb": "assets/img/gameui-03-t.jpg",
+   "w": 1919,
+   "h": 1079
+  },
+  {
+   "id": "gameui-04",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-04.jpg",
+   "thumb": "assets/img/gameui-04-t.jpg",
+   "w": 1441,
+   "h": 875
   },
   {
    "id": "gameui-05",
@@ -1085,64 +1165,94 @@ var DATA = {
    "h": 1976
   },
   {
-   "id": "scene-07",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-07.jpg",
-   "thumb": "assets/img/scene-07-t.jpg",
-   "w": 4961,
-   "h": 3508
+   "id": "webui-01",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-01.jpg",
+   "thumb": "assets/img/webui-01-t.jpg",
+   "w": 1581,
+   "h": 890
   },
   {
-   "id": "character-15",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-15.jpg",
-   "thumb": "assets/img/character-15-t.jpg",
-   "w": 4961,
-   "h": 3508
+   "id": "webui-02",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-02.jpg",
+   "thumb": "assets/img/webui-02-t.jpg",
+   "w": 1875,
+   "h": 1055
+  },
+  {
+   "id": "webui-03",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-03.jpg",
+   "thumb": "assets/img/webui-03-t.jpg",
+   "w": 1884,
+   "h": 1061
+  },
+  {
+   "id": "webui-04",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-04.jpg",
+   "thumb": "assets/img/webui-04-t.jpg",
+   "w": 1883,
+   "h": 1061
+  },
+  {
+   "id": "webui-05",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-05.jpg",
+   "thumb": "assets/img/webui-05-t.jpg",
+   "w": 1882,
+   "h": 1056
+  },
+  {
+   "id": "webui-06",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-06.jpg",
+   "thumb": "assets/img/webui-06-t.jpg",
+   "w": 1879,
+   "h": 1059
+  },
+  {
+   "id": "webui-07",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-07.jpg",
+   "thumb": "assets/img/webui-07-t.jpg",
+   "w": 1881,
+   "h": 1058
+  },
+  {
+   "id": "webui-08",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web Design",
+   "src": "assets/img/webui-08.jpg",
+   "thumb": "assets/img/webui-08-t.jpg",
+   "w": 1882,
+   "h": 1062
   },
   {
    "id": "webui-09",
    "cat": "webui",
    "folder_zh": "電腦網站",
-   "folder_en": "Web",
+   "folder_en": "Web Design",
    "src": "assets/img/webui-09.jpg",
    "thumb": "assets/img/webui-09-t.jpg",
    "w": 1879,
    "h": 1057
-  },
-  {
-   "id": "mexico-06",
-   "cat": "mexico",
-   "folder_zh": "Mexico_UE_project",
-   "folder_en": "Mexico_UE_project",
-   "src": "assets/img/mexico-06.jpg",
-   "thumb": "assets/img/mexico-06-t.jpg",
-   "w": 1972,
-   "h": 825
-  },
-  {
-   "id": "scene-05",
-   "cat": "scene",
-   "folder_zh": "場景",
-   "folder_en": "Scene",
-   "src": "assets/img/scene-05.jpg",
-   "thumb": "assets/img/scene-05-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-04",
-   "cat": "character",
-   "folder_zh": "角色",
-   "folder_en": "Character",
-   "src": "assets/img/character-04.jpg",
-   "thumb": "assets/img/character-04-t.jpg",
-   "w": 4961,
-   "h": 3508
   }
  ]
 };
