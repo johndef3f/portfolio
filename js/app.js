@@ -64,7 +64,8 @@
       : n + ' ' + t('unit_image');
 
     var html = '';
-    html += '<button class="card rv' + (w.wide ? ' card--wide' : '') + '" type="button" data-id="' + w.id + '" data-cat="' + w.cat + '" aria-label="' + title + '">';
+    var size = w.hero ? ' card--hero' : (w.wide ? ' card--wide' : '');
+    html += '<button class="card rv' + size + '" type="button" data-id="' + w.id + '" data-cat="' + w.cat + '" aria-label="' + title + '">';
     html +=   '<div class="card__media">';
     html +=     '<img class="shot" src="' + w.cover + '" alt="' + title + '" loading="lazy" decoding="async">';
     html +=     '<span class="card__idx">' + (i < 9 ? '0' : '') + (i + 1) + '</span>';
@@ -78,7 +79,8 @@
     html +=     '<div class="card__sub">' + sub + '</div>';
     html +=     '<h3 class="card__title">' + title + '</h3>';
     if (credits.length) {
-      var shown = credits.slice(0, 6);
+      // the hero card has a full row to work with, so it lists every item
+      var shown = w.hero ? credits : credits.slice(0, 6);
       var rest  = credits.length - shown.length;
       html +=   '<div class="card__role">';
       html +=     '<b>' + t('credits') + '</b>';

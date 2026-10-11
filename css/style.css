@@ -389,6 +389,25 @@ section{position:relative;z-index:2}
 }
 .card:hover .tag{border-color:rgba(168,37,70,.3);color:var(--bone-dim)}
 
+/* hero card — the lead piece, full width of the grid */
+.card--hero{grid-column:1/-1}
+.card--hero .card__media{aspect-ratio:2/1}
+.card--hero .card__idx{font-size:15px;top:18px;left:20px}
+.card--hero .card__play{width:74px;height:74px;margin:-37px 0 0 -37px}
+.card--hero .card__play svg{width:19px;height:19px}
+
+@media (min-width:860px){
+  .card--hero .card__body{padding:26px 30px 30px;gap:12px}
+  .card--hero .card__sub{font-size:12px;letter-spacing:.2em}
+  .card--hero .card__title{font-size:clamp(1.9rem,3.4vw,2.9rem)}
+  .card--hero .card__role{padding-top:16px}
+  .card--hero .card__role > b{font-size:12px;margin-bottom:11px}
+  .card--hero .card__roleList{gap:8px}
+  .card--hero .card__roleList span{font-size:14px;padding:7px 14px}
+  .card--hero .card__reveal{padding:34px 30px}
+  .card--hero .card__reveal p{font-size:15px;line-height:1.9;max-width:78ch}
+}
+
 @media (min-width:1080px){
   .card--wide{grid-column:span 2}
   .card--wide .card__media{aspect-ratio:21/9}

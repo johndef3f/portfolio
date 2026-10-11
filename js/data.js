@@ -261,82 +261,6 @@ var DATA = {
  },
  "works": [
   {
-   "credits_zh": [],
-   "credits_en": [],
-   "id": "web-game",
-   "cat": "game",
-   "kind": "video",
-   "wide": true,
-   "cover": "assets/poster/web-game.jpg",
-   "title_zh": "巴比倫巨塔_3d網頁遊戲",
-   "title_en": "Tower of Babel — 3D Web Game",
-   "subtitle_zh": "瀏覽器即時運行的 3D 遊戲",
-   "subtitle_en": "A real-time 3D game running in the browser",
-   "desc_zh": "在瀏覽器中即時運行的 3D 遊戲開發實錄。場域是一座向上收束的巨塔內部，青綠冷光打在格狀牆面與鋼架樓層上，中央立著巨大的十字架與受難像，一圈人群沉默地圍繞底座。玩家可自由移動視角與走位，靠近角色即觸發 NPC 對話，對話內容帶出賣身契與礦坑勞動的敘事線。畫面右側是即時參數面板，可直接調整場景環境、光照、攝影機、NPC 與小地圖設定。",
-   "desc_en": "A development capture of a 3D game running live in the browser. The space is the interior of a tower that narrows as it rises: cold teal light across grid walls and steel floors, a monumental crucifix at the centre, a silent crowd ringing its base. The player moves the camera and walks freely; approaching a figure triggers NPC dialogue that carries a narrative of indenture and mine labour. A live parameter panel on the right drives scene, lighting, camera, NPC and minimap settings.",
-   "tags_zh": [
-    "3D 網頁遊戲",
-    "即時 3D",
-    "場景設計",
-    "NPC 對話系統"
-   ],
-   "tags_en": [
-    "3D Web Game",
-    "Real-time 3D",
-    "Environment Design",
-    "NPC Dialogue"
-   ],
-   "items": [
-    {
-     "type": "video",
-     "src": "assets/video/web-game.mp4",
-     "poster": "assets/poster/web-game.jpg",
-     "thumb": "assets/poster/web-game-t.jpg"
-    }
-   ]
-  },
-  {
-   "credits_zh": [
-    "剪輯成品",
-    "場景繪製",
-    "場景設計"
-   ],
-   "credits_en": [
-    "Final Edit",
-    "Environment Painting",
-    "Environment Design"
-   ],
-   "id": "covered-life",
-   "cat": "anim",
-   "kind": "video",
-   "wide": true,
-   "cover": "assets/poster/covered-life.jpg",
-   "title_zh": "Cover life",
-   "title_en": "Cover life",
-   "subtitle_zh": "被標語蓋住的成長風景",
-   "subtitle_en": "Growing up under someone else's slogan",
-   "desc_zh": "一名背著書包的少年站在「成功路」的路牌下，對街的老屋被「書中自有黃金屋」的巨幅帆布整個蓋住。全片以 2D 數位手繪與分層場景動畫完成，從青亮的白日推進到車窗外的暗夜街口，最後收在逆光的黃昏與一根寫滿粉筆塗鴉的電線桿。用光線與彩度的落差，談升學標語如何一層層蓋過一個人原本的樣子。",
-   "desc_en": "A schoolboy stands beneath a road sign reading Success Road while a giant banner promising riches in books swallows the building across the street. Hand-painted 2D artwork and layered scene animation carry the film from bright daylight into a dark car window, closing on a backlit dusk and a utility pole covered in chalk doodles. Light and saturation do the storytelling: slogans, layer by layer, covering who someone used to be.",
-   "tags_zh": [
-    "2D動畫",
-    "美術設計",
-    "敘事短片"
-   ],
-   "tags_en": [
-    "2D Animation",
-    "Art Direction",
-    "Narrative Short"
-   ],
-   "items": [
-    {
-     "type": "video",
-     "src": "assets/video/covered-life.mp4",
-     "poster": "assets/poster/covered-life.jpg",
-     "thumb": "assets/poster/covered-life-t.jpg"
-    }
-   ]
-  },
-  {
    "credits_zh": [
     "前期概念美術",
     "3D 建模",
@@ -369,6 +293,7 @@ var DATA = {
    "cat": "anim",
    "kind": "video",
    "wide": false,
+   "hero": true,
    "cover": "assets/poster/ambition.jpg",
    "title_zh": "算什麼，AI? Just One Clik ?",
    "title_en": "Just One Clik ?",
@@ -396,12 +321,55 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [
+    "剪輯成品",
+    "場景繪製",
+    "場景設計"
+   ],
+   "credits_en": [
+    "Final Edit",
+    "Environment Painting",
+    "Environment Design"
+   ],
+   "id": "covered-life",
+   "cat": "anim",
+   "kind": "video",
+   "wide": true,
+   "hero": false,
+   "cover": "assets/poster/covered-life.jpg",
+   "title_zh": "Cover life",
+   "title_en": "Cover life",
+   "subtitle_zh": "被標語蓋住的成長風景",
+   "subtitle_en": "Growing up under someone else's slogan",
+   "desc_zh": "一名背著書包的少年站在「成功路」的路牌下，對街的老屋被「書中自有黃金屋」的巨幅帆布整個蓋住。全片以 2D 數位手繪與分層場景動畫完成，從青亮的白日推進到車窗外的暗夜街口，最後收在逆光的黃昏與一根寫滿粉筆塗鴉的電線桿。用光線與彩度的落差，談升學標語如何一層層蓋過一個人原本的樣子。",
+   "desc_en": "A schoolboy stands beneath a road sign reading Success Road while a giant banner promising riches in books swallows the building across the street. Hand-painted 2D artwork and layered scene animation carry the film from bright daylight into a dark car window, closing on a backlit dusk and a utility pole covered in chalk doodles. Light and saturation do the storytelling: slogans, layer by layer, covering who someone used to be.",
+   "tags_zh": [
+    "2D動畫",
+    "美術設計",
+    "敘事短片"
+   ],
+   "tags_en": [
+    "2D Animation",
+    "Art Direction",
+    "Narrative Short"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/covered-life.mp4",
+     "poster": "assets/poster/covered-life.jpg",
+     "thumb": "assets/poster/covered-life-t.jpg"
+    }
+   ]
+  },
+  {
    "credits_zh": [],
    "credits_en": [],
    "id": "afterglow",
    "cat": "anim",
    "kind": "video",
    "wide": false,
+   "hero": false,
    "cover": "assets/poster/afterglow-heart.jpg",
    "title_zh": "餘光裡的紅",
    "title_en": "The Red at the Edge of Your Eye",
@@ -441,6 +409,7 @@ var DATA = {
    "cat": "anim",
    "kind": "video",
    "wide": false,
+   "hero": false,
    "cover": "assets/poster/zhaoan-night.jpg",
    "title_zh": "詔安不夜城",
    "title_en": "Zhao'an, the Ever-Bright City",
@@ -474,6 +443,7 @@ var DATA = {
    "cat": "anim",
    "kind": "video",
    "wide": false,
+   "hero": false,
    "cover": "assets/poster/front.jpg",
    "title_zh": "貓與鼠_走路動畫表演",
    "title_en": "Cat & Mouse — Walk Cycle Performance",
@@ -509,6 +479,7 @@ var DATA = {
    "cat": "motion",
    "kind": "video",
    "wide": true,
+   "hero": false,
    "cover": "assets/poster/motion-6.jpg",
    "title_zh": "MECHA-SPIN 光碟機動",
    "title_en": "MECHA-SPIN 01",
@@ -562,6 +533,42 @@ var DATA = {
      "src": "assets/video/motion-6.mp4",
      "poster": "assets/poster/motion-6.jpg",
      "thumb": "assets/poster/motion-6-t.jpg"
+    }
+   ]
+  },
+  {
+   "credits_zh": [],
+   "credits_en": [],
+   "id": "web-game",
+   "cat": "game",
+   "kind": "video",
+   "wide": true,
+   "hero": false,
+   "cover": "assets/poster/web-game.jpg",
+   "title_zh": "巴比倫巨塔_3d網頁遊戲",
+   "title_en": "Tower of Babel — 3D Web Game",
+   "subtitle_zh": "瀏覽器即時運行的 3D 遊戲",
+   "subtitle_en": "A real-time 3D game running in the browser",
+   "desc_zh": "在瀏覽器中即時運行的 3D 遊戲開發實錄。場域是一座向上收束的巨塔內部，青綠冷光打在格狀牆面與鋼架樓層上，中央立著巨大的十字架與受難像，一圈人群沉默地圍繞底座。玩家可自由移動視角與走位，靠近角色即觸發 NPC 對話，對話內容帶出賣身契與礦坑勞動的敘事線。畫面右側是即時參數面板，可直接調整場景環境、光照、攝影機、NPC 與小地圖設定。",
+   "desc_en": "A development capture of a 3D game running live in the browser. The space is the interior of a tower that narrows as it rises: cold teal light across grid walls and steel floors, a monumental crucifix at the centre, a silent crowd ringing its base. The player moves the camera and walks freely; approaching a figure triggers NPC dialogue that carries a narrative of indenture and mine labour. A live parameter panel on the right drives scene, lighting, camera, NPC and minimap settings.",
+   "tags_zh": [
+    "3D 網頁遊戲",
+    "即時 3D",
+    "場景設計",
+    "NPC 對話系統"
+   ],
+   "tags_en": [
+    "3D Web Game",
+    "Real-time 3D",
+    "Environment Design",
+    "NPC Dialogue"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/web-game.mp4",
+     "poster": "assets/poster/web-game.jpg",
+     "thumb": "assets/poster/web-game-t.jpg"
     }
    ]
   }
