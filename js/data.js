@@ -230,6 +230,228 @@ var DATA = {
  },
  "works": [
   {
+   "id": "covered-life",
+   "cat": "anim",
+   "kind": "video",
+   "wide": true,
+   "cover": "assets/poster/covered-life.jpg",
+   "title_zh": "蓋住的人生",
+   "title_en": "Covered Life",
+   "subtitle_zh": "被標語蓋住的成長風景",
+   "subtitle_en": "Growing up under someone else's slogan",
+   "desc_zh": "一名背著書包的少年站在「成功路」的路牌下，對街的老屋被「書中自有黃金屋」的巨幅帆布整個蓋住。全片以 2D 數位手繪與分層場景動畫完成，從青亮的白日推進到車窗外的暗夜街口，最後收在逆光的黃昏與一根寫滿粉筆塗鴉的電線桿。用光線與彩度的落差，談升學標語如何一層層蓋過一個人原本的樣子。",
+   "desc_en": "A schoolboy stands beneath a road sign reading Success Road while a giant banner promising riches in books swallows the building across the street. Hand-painted 2D artwork and layered scene animation carry the film from bright daylight into a dark car window, closing on a backlit dusk and a utility pole covered in chalk doodles. Light and saturation do the storytelling: slogans, layer by layer, covering who someone used to be.",
+   "tags_zh": [
+    "2D動畫",
+    "美術設計",
+    "敘事短片"
+   ],
+   "tags_en": [
+    "2D Animation",
+    "Art Direction",
+    "Narrative Short"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/covered-life.mp4",
+     "poster": "assets/poster/covered-life.jpg",
+     "thumb": "assets/poster/covered-life-t.jpg"
+    }
+   ]
+  },
+  {
+   "id": "ambition",
+   "cat": "anim",
+   "kind": "video",
+   "wide": false,
+   "cover": "assets/poster/ambition.jpg",
+   "title_zh": "野心",
+   "title_en": "Ambition",
+   "subtitle_zh": "當 AI 的便利開始耗電",
+   "subtitle_en": "The energy bill behind every AI call",
+   "desc_zh": "寬銀幕 3D 敘事短片。鏡頭從一台桌布寫著 LOVE THE EARTH 的電腦出發，潛進宛如工業峽谷的資料中心：紫藍色調的散熱塔噴出熱氣，載著資料的小型飛行器在高塔之間穿梭，最後回到一個 AI 對話介面，以生成一張蛋糕圖收尾。中英雙語字幕，節奏由輕快轉沉，談的是每一次呼叫 AI 背後真實的用電代價。",
+   "desc_en": "A widescreen 3D short on the power cost of artificial intelligence. The camera leaves a desktop whose wallpaper reads LOVE THE EARTH and descends into a data center built like an industrial canyon, where violet cooling towers vent heat and small delivery craft thread between the stacks. It ends inside a chat interface generating a picture of a cake. Bilingual subtitles, a tone that cools as it goes.",
+   "tags_zh": [
+    "3D動畫",
+    "科普敘事",
+    "場景設計"
+   ],
+   "tags_en": [
+    "3D Animation",
+    "Explainer Film",
+    "Environment Design"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/ambition.mp4",
+     "poster": "assets/poster/ambition.jpg",
+     "thumb": "assets/poster/ambition-t.jpg"
+    }
+   ]
+  },
+  {
+   "id": "afterglow",
+   "cat": "anim",
+   "kind": "video",
+   "wide": false,
+   "cover": "assets/poster/afterglow-heart.jpg",
+   "title_zh": "餘光裡的紅",
+   "title_en": "The Red at the Edge of Your Eye",
+   "subtitle_zh": "被看見之前，他們一直都在",
+   "subtitle_en": "Always there, just outside your view",
+   "desc_zh": "兩支一組的公益短片系列。紀實照片去背後疊上網點與粗顆粒，壓成黑白拼貼的街景，全片只讓主角留著紅色：〈愛心篇〉是夜市裡獨自蹲坐在地上的孩子，四周是熱鬧的用餐人群與攤前的老闆；〈陪伴篇〉是老屋長廊裡扶著助行器的阿嬤，手機停在兒子臨時加班的訊息上。兩支都收在同一顆手持手機的畫面，把注意力交回觀眾手上。",
+   "desc_en": "A two-part public-service series built from documentary stills: subjects cut out, layered over halftone and heavy grain, the whole street pressed into black and white so only one figure stays red. The first film follows a child crouched alone on the ground of a busy night market; the second, an elderly woman with a walker in an old house, her phone holding a message from a son who has to work. Both end on the same hand holding a screen.",
+   "tags_zh": [
+    "拼貼動畫",
+    "平面設計",
+    "公益短片"
+   ],
+   "tags_en": [
+    "Collage Animation",
+    "Graphic Design",
+    "PSA Series"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/afterglow-heart.mp4",
+     "poster": "assets/poster/afterglow-heart.jpg",
+     "thumb": "assets/poster/afterglow-heart-t.jpg"
+    },
+    {
+     "type": "video",
+     "src": "assets/video/afterglow-company.mp4",
+     "poster": "assets/poster/afterglow-company.jpg",
+     "thumb": "assets/poster/afterglow-company-t.jpg"
+    }
+   ]
+  },
+  {
+   "id": "zhaoan",
+   "cat": "anim",
+   "kind": "video",
+   "wide": false,
+   "cover": "assets/poster/zhaoan-night.jpg",
+   "title_zh": "詔安不夜城",
+   "title_en": "Zhao'an, the Ever-Bright City",
+   "subtitle_zh": "燈火未熄的水岸夜城",
+   "subtitle_en": "A water town that never goes dark",
+   "desc_zh": "3D 場景與角色動畫。開場是一整片近乎全黑的水面，片名浮出後，一名戴著垂紅纓斗笠的船夫撐槳劃入畫面；鏡頭上岸後展開層層疊起的紅瓦街巷，燈籠串、窗格透出的橘光與廟宇飛簷堆出整座不夜城，身著花紋長袍的人物撐著傘在石階之間走動。冷藍夜色與暖橘燈火的對撞，是全片最主要的美術語言。",
+   "desc_en": "A 3D environment and character piece. It opens on almost pure black water, the title surfacing before a boatman in a straw hat with red tassels rows into frame. The camera then climbs ashore into stacked tile-roofed lanes where lantern strings, lit window grids and temple eaves build a town that never sleeps, figures in patterned robes crossing the steps under parasols. Cold blue night against warm lamplight carries the whole look.",
+   "tags_zh": [
+    "3D場景設計",
+    "角色動畫",
+    "燈光設計"
+   ],
+   "tags_en": [
+    "3D Environment",
+    "Character Animation",
+    "Lighting"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/zhaoan-night.mp4",
+     "poster": "assets/poster/zhaoan-night.jpg",
+     "thumb": "assets/poster/zhaoan-night-t.jpg"
+    }
+   ]
+  },
+  {
+   "id": "front",
+   "cat": "anim",
+   "kind": "video",
+   "wide": false,
+   "cover": "assets/poster/front.jpg",
+   "title_zh": "貓與鼠角色習作",
+   "title_en": "Cat & Mouse Character Study",
+   "subtitle_zh": "經典卡通角色的立體重製",
+   "subtitle_en": "A 3D take on a classic cartoon duo",
+   "desc_zh": "以經典卡通的貓鼠搭檔為題的 3D 角色習作，畫面是一顆固定的正面鏡頭：灰藍漸層背景、地面打出一圈暖色光暈，大貓單腳撐地、雙手抱著頭做出誇張的得意姿態，小鼠站在前景抬頭看他，一高一低的體型落差撐起整個構圖。練習重點放在造型比例、五官塑形與毛感材質，以及乾淨的棚拍式打光與算圖。",
+   "desc_en": "A 3D character study of a classic cartoon cat-and-mouse pair, held in a single front-on shot. A blue-grey gradient backdrop, a warm pool of light on the floor, the cat balanced on one foot with both hands behind his head in an exaggerated swagger, the small mouse planted in the foreground looking up at him. The focus is proportion, facial sculpting, surface feel and clean studio lighting.",
+   "tags_zh": [
+    "3D角色",
+    "建模與材質",
+    "燈光算圖"
+   ],
+   "tags_en": [
+    "3D Character",
+    "Modeling & Texturing",
+    "Lighting & Render"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/front.mp4",
+     "poster": "assets/poster/front.jpg",
+     "thumb": "assets/poster/front-t.jpg"
+    }
+   ]
+  },
+  {
+   "id": "motion",
+   "cat": "motion",
+   "kind": "video",
+   "wide": true,
+   "cover": "assets/poster/motion-6.jpg",
+   "title_zh": "MECHA-SPIN 光碟機動",
+   "title_en": "MECHA-SPIN 01",
+   "subtitle_zh": "六種配色的循環動態練習",
+   "subtitle_en": "One loop, six colorways",
+   "desc_zh": "六支各 7 秒的方形循環動態，同一套設計在六種配色裡各跑一次。畫面從一張包在塑膠套裡的光碟開始，外膜褪去、機械外框一塊塊鎖上，變成標著「MECHA-SPIN 01 / Precision in motion」的機動播放器，背景同時跑出 RAW FREQUENCY、DIGITAL NOISE、ANALOG 等動態字卡。掃描線、色差與粗噪點堆出硬派的千禧科技感，為社群方版規格而做。",
+   "desc_en": "Six square seven-second loops running the same build in six colorways. Each opens on a disc sealed in a plastic sleeve, the wrap falling away as machined panels bolt themselves into place around it, resolving into a player plated MECHA-SPIN 01 / Precision in motion. Kinetic type reading RAW FREQUENCY, DIGITAL NOISE and ANALOG drifts behind it. Scanlines, chromatic fringing and heavy grain give the set a hard-edged millennium-tech finish.",
+   "tags_zh": [
+    "Motion Graphic",
+    "動態字體",
+    "3D質感設計"
+   ],
+   "tags_en": [
+    "Motion Graphics",
+    "Kinetic Typography",
+    "3D Texturing"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/motion-1.mp4",
+     "poster": "assets/poster/motion-1.jpg",
+     "thumb": "assets/poster/motion-1-t.jpg"
+    },
+    {
+     "type": "video",
+     "src": "assets/video/motion-2.mp4",
+     "poster": "assets/poster/motion-2.jpg",
+     "thumb": "assets/poster/motion-2-t.jpg"
+    },
+    {
+     "type": "video",
+     "src": "assets/video/motion-3.mp4",
+     "poster": "assets/poster/motion-3.jpg",
+     "thumb": "assets/poster/motion-3-t.jpg"
+    },
+    {
+     "type": "video",
+     "src": "assets/video/motion-4.mp4",
+     "poster": "assets/poster/motion-4.jpg",
+     "thumb": "assets/poster/motion-4-t.jpg"
+    },
+    {
+     "type": "video",
+     "src": "assets/video/motion-5.mp4",
+     "poster": "assets/poster/motion-5.jpg",
+     "thumb": "assets/poster/motion-5-t.jpg"
+    },
+    {
+     "type": "video",
+     "src": "assets/video/motion-6.mp4",
+     "poster": "assets/poster/motion-6.jpg",
+     "thumb": "assets/poster/motion-6-t.jpg"
+    }
+   ]
+  },
+  {
    "id": "character",
    "cat": "concept",
    "kind": "image",

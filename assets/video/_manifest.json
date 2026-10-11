@@ -1,0 +1,74 @@
+{
+ "covered-life": {
+  "bytes": 57485460,
+  "src": "assets/video/covered-life.mp4",
+  "poster": "assets/poster/covered-life.jpg",
+  "thumb": "assets/poster/covered-life-t.jpg"
+ },
+ "ambition": {
+  "bytes": 50464972,
+  "src": "assets/video/ambition.mp4",
+  "poster": "assets/poster/ambition.jpg",
+  "thumb": "assets/poster/ambition-t.jpg"
+ },
+ "afterglow-heart": {
+  "bytes": 16190067,
+  "src": "assets/video/afterglow-heart.mp4",
+  "poster": "assets/poster/afterglow-heart.jpg",
+  "thumb": "assets/poster/afterglow-heart-t.jpg"
+ },
+ "afterglow-company": {
+  "bytes": 10117603,
+  "src": "assets/video/afterglow-company.mp4",
+  "poster": "assets/poster/afterglow-company.jpg",
+  "thumb": "assets/poster/afterglow-company-t.jpg"
+ },
+ "zhaoan-night": {
+  "bytes": 11395569,
+  "src": "assets/video/zhaoan-night.mp4",
+  "poster": "assets/poster/zhaoan-night.jpg",
+  "thumb": "assets/poster/zhaoan-night-t.jpg"
+ },
+ "front": {
+  "bytes": 2637390,
+  "src": "assets/video/front.mp4",
+  "poster": "assets/poster/front.jpg",
+  "thumb": "assets/poster/front-t.jpg"
+ },
+ "motion-1": {
+  "bytes": 2046685,
+  "src": "assets/video/motion-1.mp4",
+  "poster": "assets/poster/motion-1.jpg",
+  "thumb": "assets/poster/motion-1-t.jpg"
+ },
+ "motion-2": {
+  "bytes": 2341592,
+  "src": "assets/video/motion-2.mp4",
+  "poster": "assets/poster/motion-2.jpg",
+  "thumb": "assets/poster/motion-2-t.jpg"
+ },
+ "motion-3": {
+  "bytes": 1766049,
+  "src": "assets/video/motion-3.mp4",
+  "poster": "assets/poster/motion-3.jpg",
+  "thumb": "assets/poster/motion-3-t.jpg"
+ },
+ "motion-4": {
+  "bytes": 2293235,
+  "src": "assets/video/motion-4.mp4",
+  "poster": "assets/poster/motion-4.jpg",
+  "thumb": "assets/poster/motion-4-t.jpg"
+ },
+ "motion-5": {
+  "bytes": 1757577,
+  "src": "assets/video/motion-5.mp4",
+  "poster": "assets/poster/motion-5.jpg",
+  "thumb": "assets/poster/motion-5-t.jpg"
+ },
+ "motion-6": {
+  "bytes": 2088466,
+  "src": "assets/video/motion-6.mp4",
+  "poster": "assets/poster/motion-6.jpg",
+  "thumb": "assets/poster/motion-6-t.jpg"
+ }
+}
