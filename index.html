@@ -29,6 +29,7 @@
   <div class="nav__right">
     <ul class="nav__links" id="navLinks">
       <li><a href="#work" data-i18n="nav_work">作品</a></li>
+      <li><a href="#gallery" data-i18n="nav_gallery">圖牆</a></li>
       <li><a href="#process" data-i18n="nav_process">流程</a></li>
       <li><a href="#about" data-i18n="nav_about">關於</a></li>
       <li><a href="#contact" data-i18n="nav_contact">聯絡</a></li>
@@ -76,8 +77,21 @@
     <p class="sec__aside rv" id="workCount"></p>
   </div>
 
-  <div class="filters rv" id="filters" role="group" aria-label="Filter works"></div>
   <div class="work-grid" id="grid"></div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="sec shell" id="gallery">
+  <div class="sec__head">
+    <div>
+      <div class="sec__label rv" data-i18n="gal_label">靜態作品</div>
+      <h2 class="sec__title rv" data-i18n-html="gal_title">作品<em>圖牆</em></h2>
+    </div>
+    <p class="sec__aside rv" id="galCount"></p>
+  </div>
+
+  <div class="filters rv" id="galFilters" role="group" aria-label="Filter gallery"></div>
+  <div class="wall" id="wall"></div>
 </section>
 
 <!-- ============ PROCESS ============ -->
