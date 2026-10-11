@@ -1,0 +1,414 @@
+{
+ "character": [
+  {
+   "id": "character-01",
+   "src_name": "B11335017怪物排版_工作區域 1.jpg",
+   "w": 5031,
+   "h": 3579,
+   "full": "assets/img/character-01.jpg",
+   "thumb": "assets/img/character-01-t.jpg"
+  },
+  {
+   "id": "character-02",
+   "src_name": "B11335017陳恩語(1).jpg",
+   "w": 4962,
+   "h": 3509,
+   "full": "assets/img/character-02.jpg",
+   "thumb": "assets/img/character-02-t.jpg"
+  },
+  {
+   "id": "character-03",
+   "src_name": "B11335017陳恩語_Final.jpg",
+   "w": 4962,
+   "h": 3509,
+   "full": "assets/img/character-03.jpg",
+   "thumb": "assets/img/character-03-t.jpg"
+  },
+  {
+   "id": "character-04",
+   "src_name": "mregg.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/character-04.jpg",
+   "thumb": "assets/img/character-04-t.jpg"
+  },
+  {
+   "id": "character-05",
+   "src_name": "人物概念美術23.jpg",
+   "w": 5193,
+   "h": 4453,
+   "full": "assets/img/character-05.jpg",
+   "thumb": "assets/img/character-05-t.jpg"
+  },
+  {
+   "id": "character-06",
+   "src_name": "排版_工作區域 1.jpg",
+   "w": 5031,
+   "h": 3579,
+   "full": "assets/img/character-06.jpg",
+   "thumb": "assets/img/character-06-t.jpg"
+  },
+  {
+   "id": "character-07",
+   "src_name": "機器人排版_工作區域 1.jpg",
+   "w": 5031,
+   "h": 3579,
+   "full": "assets/img/character-07.jpg",
+   "thumb": "assets/img/character-07-t.jpg"
+  },
+  {
+   "id": "character-08",
+   "src_name": "螢幕擷取畫面 2026-10-06 011019.png",
+   "w": 1263,
+   "h": 824,
+   "full": "assets/img/character-08.jpg",
+   "thumb": "assets/img/character-08-t.jpg"
+  },
+  {
+   "id": "character-09",
+   "src_name": "螢幕擷取畫面 2026-10-06 011037.png",
+   "w": 1259,
+   "h": 819,
+   "full": "assets/img/character-09.jpg",
+   "thumb": "assets/img/character-09-t.jpg"
+  },
+  {
+   "id": "character-10",
+   "src_name": "螢幕擷取畫面 2026-10-06 011956.png",
+   "w": 1385,
+   "h": 829,
+   "full": "assets/img/character-10.jpg",
+   "thumb": "assets/img/character-10-t.jpg"
+  },
+  {
+   "id": "character-11",
+   "src_name": "角色1細部概念美術.png",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/character-11.jpg",
+   "thumb": "assets/img/character-11-t.jpg"
+  },
+  {
+   "id": "character-12",
+   "src_name": "角色2細部概念美術.png",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/character-12.jpg",
+   "thumb": "assets/img/character-12-t.jpg"
+  },
+  {
+   "id": "character-13",
+   "src_name": "遊戲截圖-安德烈.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/character-13.jpg",
+   "thumb": "assets/img/character-13-t.jpg"
+  },
+  {
+   "id": "character-14",
+   "src_name": "遊戲截圖-胡迪.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/character-14.jpg",
+   "thumb": "assets/img/character-14-t.jpg"
+  },
+  {
+   "id": "character-15",
+   "src_name": "遊戲截圖-警察.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/character-15.jpg",
+   "thumb": "assets/img/character-15-t.jpg"
+  }
+ ],
+ "scene": [
+  {
+   "id": "scene-01",
+   "src_name": "上班.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-01.jpg",
+   "thumb": "assets/img/scene-01-t.jpg"
+  },
+  {
+   "id": "scene-02",
+   "src_name": "中年.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-02.jpg",
+   "thumb": "assets/img/scene-02-t.jpg"
+  },
+  {
+   "id": "scene-03",
+   "src_name": "低潮.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-03.jpg",
+   "thumb": "assets/img/scene-03-t.jpg"
+  },
+  {
+   "id": "scene-04",
+   "src_name": "合_最終版-01.jpg",
+   "w": 1191,
+   "h": 842,
+   "full": "assets/img/scene-04.jpg",
+   "thumb": "assets/img/scene-04-t.jpg"
+  },
+  {
+   "id": "scene-05",
+   "src_name": "場景.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/scene-05.jpg",
+   "thumb": "assets/img/scene-05-t.jpg"
+  },
+  {
+   "id": "scene-06",
+   "src_name": "場景1.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-06.jpg",
+   "thumb": "assets/img/scene-06-t.jpg"
+  },
+  {
+   "id": "scene-07",
+   "src_name": "場景2.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/scene-07.jpg",
+   "thumb": "assets/img/scene-07-t.jpg"
+  },
+  {
+   "id": "scene-08",
+   "src_name": "天亮.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-08.jpg",
+   "thumb": "assets/img/scene-08-t.jpg"
+  },
+  {
+   "id": "scene-09",
+   "src_name": "學生.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-09.jpg",
+   "thumb": "assets/img/scene-09-t.jpg"
+  },
+  {
+   "id": "scene-10",
+   "src_name": "承-01.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/scene-10.jpg",
+   "thumb": "assets/img/scene-10-t.jpg"
+  },
+  {
+   "id": "scene-11",
+   "src_name": "結婚.jpg",
+   "w": 2016,
+   "h": 1134,
+   "full": "assets/img/scene-11.jpg",
+   "thumb": "assets/img/scene-11-t.jpg"
+  },
+  {
+   "id": "scene-12",
+   "src_name": "起-01.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/scene-12.jpg",
+   "thumb": "assets/img/scene-12-t.jpg"
+  },
+  {
+   "id": "scene-13",
+   "src_name": "轉-01.jpg",
+   "w": 4961,
+   "h": 3508,
+   "full": "assets/img/scene-13.jpg",
+   "thumb": "assets/img/scene-13-t.jpg"
+  }
+ ],
+ "appui": [
+  {
+   "id": "appui-01",
+   "src_name": "dmd_工作區域 1.jpg",
+   "w": 1080,
+   "h": 1920,
+   "full": "assets/img/appui-01.jpg",
+   "thumb": "assets/img/appui-01-t.jpg"
+  },
+  {
+   "id": "appui-02",
+   "src_name": "smartfreash UI介面設計.jpg",
+   "w": 10631,
+   "h": 7079,
+   "full": "assets/img/appui-02.jpg",
+   "thumb": "assets/img/appui-02-t.jpg"
+  },
+  {
+   "id": "appui-03",
+   "src_name": "亞當_工作區域 1.jpg",
+   "w": 1080,
+   "h": 1920,
+   "full": "assets/img/appui-03.jpg",
+   "thumb": "assets/img/appui-03-t.jpg"
+  },
+  {
+   "id": "appui-04",
+   "src_name": "宅宅.jpg",
+   "w": 1080,
+   "h": 1920,
+   "full": "assets/img/appui-04.jpg",
+   "thumb": "assets/img/appui-04-t.jpg"
+  },
+  {
+   "id": "appui-05",
+   "src_name": "山頂洞人_工作區域 1.jpg",
+   "w": 1080,
+   "h": 1920,
+   "full": "assets/img/appui-05.jpg",
+   "thumb": "assets/img/appui-05-t.jpg"
+  },
+  {
+   "id": "appui-06",
+   "src_name": "測驗介面_預視.jpg",
+   "w": 3078,
+   "h": 5460,
+   "full": "assets/img/appui-06.jpg",
+   "thumb": "assets/img/appui-06-t.jpg"
+  }
+ ],
+ "gameui": [
+  {
+   "id": "gameui-01",
+   "src_name": "8080-9-0=.png",
+   "w": 1877,
+   "h": 1043,
+   "full": "assets/img/gameui-01.jpg",
+   "thumb": "assets/img/gameui-01-t.jpg"
+  },
+  {
+   "id": "gameui-02",
+   "src_name": "809-9-0.png",
+   "w": 1872,
+   "h": 1050,
+   "full": "assets/img/gameui-02.jpg",
+   "thumb": "assets/img/gameui-02-t.jpg"
+  },
+  {
+   "id": "gameui-03",
+   "src_name": "image.png",
+   "w": 1919,
+   "h": 1079,
+   "full": "assets/img/gameui-03.jpg",
+   "thumb": "assets/img/gameui-03-t.jpg"
+  },
+  {
+   "id": "gameui-04",
+   "src_name": "政黨選擇圖.png",
+   "w": 1441,
+   "h": 875,
+   "full": "assets/img/gameui-04.jpg",
+   "thumb": "assets/img/gameui-04-t.jpg"
+  },
+  {
+   "id": "gameui-05",
+   "src_name": "未命名-1_工作區域 1.jpg",
+   "w": 3073,
+   "h": 1976,
+   "full": "assets/img/gameui-05.jpg",
+   "thumb": "assets/img/gameui-05-t.jpg"
+  }
+ ],
+ "webui": [
+  {
+   "id": "webui-01",
+   "src_name": "01.png",
+   "w": 1581,
+   "h": 890,
+   "full": "assets/img/webui-01.jpg",
+   "thumb": "assets/img/webui-01-t.jpg"
+  },
+  {
+   "id": "webui-02",
+   "src_name": "02.png",
+   "w": 1875,
+   "h": 1055,
+   "full": "assets/img/webui-02.jpg",
+   "thumb": "assets/img/webui-02-t.jpg"
+  },
+  {
+   "id": "webui-03",
+   "src_name": "03.png",
+   "w": 1884,
+   "h": 1061,
+   "full": "assets/img/webui-03.jpg",
+   "thumb": "assets/img/webui-03-t.jpg"
+  },
+  {
+   "id": "webui-04",
+   "src_name": "04.png",
+   "w": 1883,
+   "h": 1061,
+   "full": "assets/img/webui-04.jpg",
+   "thumb": "assets/img/webui-04-t.jpg"
+  },
+  {
+   "id": "webui-05",
+   "src_name": "05.png",
+   "w": 1882,
+   "h": 1056,
+   "full": "assets/img/webui-05.jpg",
+   "thumb": "assets/img/webui-05-t.jpg"
+  },
+  {
+   "id": "webui-06",
+   "src_name": "06.png",
+   "w": 1879,
+   "h": 1059,
+   "full": "assets/img/webui-06.jpg",
+   "thumb": "assets/img/webui-06-t.jpg"
+  },
+  {
+   "id": "webui-07",
+   "src_name": "07.png",
+   "w": 1881,
+   "h": 1058,
+   "full": "assets/img/webui-07.jpg",
+   "thumb": "assets/img/webui-07-t.jpg"
+  },
+  {
+   "id": "webui-08",
+   "src_name": "08.png",
+   "w": 1882,
+   "h": 1062,
+   "full": "assets/img/webui-08.jpg",
+   "thumb": "assets/img/webui-08-t.jpg"
+  },
+  {
+   "id": "webui-09",
+   "src_name": "09.png",
+   "w": 1879,
+   "h": 1057,
+   "full": "assets/img/webui-09.jpg",
+   "thumb": "assets/img/webui-09-t.jpg"
+  }
+ ],
+ "poster": [
+  {
+   "id": "poster-01",
+   "src_name": "未命名-1.jpg",
+   "w": 4961,
+   "h": 4961,
+   "full": "assets/img/poster-01.jpg",
+   "thumb": "assets/img/poster-01-t.jpg"
+  },
+  {
+   "id": "poster-02",
+   "src_name": "未命名-2_工作區域 1.png",
+   "w": 3544,
+   "h": 5002,
+   "full": "assets/img/poster-02.jpg",
+   "thumb": "assets/img/poster-02-t.jpg"
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>陳恩語 Chen En-Yu — Portfolio</title>
+<meta name="description" content="陳恩語 Chen En-Yu｜視覺設計作品集：2D/3D 動畫、動態圖像、角色與場景概念設計、UI 介面與平面設計。">
+<meta name="author" content="Chen En-Yu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="陳恩語 Chen En-Yu — Portfolio">
+<meta property="og:description" content="2D/3D 動畫、動態圖像、概念設計、UI 與平面設計作品集。">
+<meta property="og:image" content="assets/img/character-01.jpg">
+<meta name="theme-color" content="#070405">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23070405'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='62' fill='%23A82546' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Inter:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-field" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a class="nav__mark" href="#top"><b>CHEN</b> <span>EN-YU</span></a>
+  <div class="nav__right">
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#work" data-i18n="nav_work">作品</a></li>
+      <li><a href="#process" data-i18n="nav_process">流程</a></li>
+      <li><a href="#about" data-i18n="nav_about">關於</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">聯絡</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="zh" class="is-on">中</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <button class="nav__burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i></button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero shell" id="top">
+  <h1 class="hero__wordmark" id="wordmark" aria-label="Portfolio">PORTFOLIO</h1>
+
+  <div class="hero__grid">
+    <p class="hero__lead rv" data-i18n-html="hero_lead">
+      我用畫面<em>說故事</em>，<br>從一張概念圖到一支動畫。
+    </p>
+    <p class="hero__note rv" data-i18n="hero_note">
+      視覺設計與動畫創作者，作品橫跨 2D/3D 動畫、動態圖像、角色與場景概念設計、UI 介面與平面視覺。
+    </p>
+  </div>
+
+  <div class="hero__foot">
+    <a class="pill rv" href="#contact"><span class="dot"></span><span data-i18n="hero_cta">接受專案委託</span></a>
+    <div class="sig rv">Chen En-Yu</div>
+    <div class="hero__meta rv">
+      <div data-i18n="hero_meta1">視覺設計 / 動畫創作</div>
+      <div data-i18n="hero_meta2">台灣 · 遠端合作</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><i></i><span data-i18n="scroll">向下捲動</span></div>
+</header>
+
+<!-- ============ WORK ============ -->
+<section class="sec shell" id="work">
+  <div class="sec__head">
+    <div>
+      <div class="sec__label rv" data-i18n="work_label">精選作品</div>
+      <h2 class="sec__title rv" data-i18n-html="work_title">Selected <em>Works</em></h2>
+    </div>
+    <p class="sec__aside rv" id="workCount"></p>
+  </div>
+
+  <div class="filters rv" id="filters" role="group" aria-label="Filter works"></div>
+  <div class="work-grid" id="grid"></div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="sec shell" id="process">
+  <div class="sec__head">
+    <div>
+      <div class="sec__label rv" data-i18n="proc_label">創作流程</div>
+      <h2 class="sec__title rv" data-i18n-html="proc_title">My <em>Process</em></h2>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div id="steps"></div>
+    <div>
+      <div class="sec__label rv" style="margin-bottom:18px" data-i18n="tools_label">常用工具</div>
+      <div class="tools" id="tools"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="sec shell" id="about">
+  <div class="sec__head">
+    <div>
+      <div class="sec__label rv" data-i18n="about_label">關於我</div>
+      <h2 class="sec__title rv" data-i18n-html="about_title">About <em>Me</em></h2>
+    </div>
+  </div>
+  <p class="rv" id="aboutText" style="font-family:var(--serif);font-size:clamp(1.05rem,2.3vw,1.6rem);line-height:1.7;max-width:62ch;color:var(--bone-dim)"></p>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec shell" id="contact">
+  <div class="contact rv">
+    <div>
+      <h2 class="contact__h">
+        <span data-i18n="ct_h1">一起做點</span>
+        <em data-i18n="ct_h2">有意思的東西</em>
+      </h2>
+      <p style="color:var(--bone-dim);font-size:13.5px;margin-top:18px;max-width:38ch" data-i18n="ct_note">
+        目前開放接案與合作邀約。動畫、概念設計、介面或平面視覺都歡迎來聊。
+      </p>
+    </div>
+    <div>
+      <div class="contact__list">
+        <a class="contact__row" href="mailto:paul.shen58@gmail.com">
+          <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          paul.shen58@gmail.com
+        </a>
+        <div class="contact__row">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span data-i18n="ct_loc">台灣 · 可遠端合作</span>
+        </div>
+        <div class="contact__row">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg>
+          <span data-i18n="ct_avail">2026 檔期開放中</span>
+        </div>
+      </div>
+      <a class="pill" href="mailto:paul.shen58@gmail.com"><span data-i18n="ct_btn">寄信給我</span> ↗</a>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>© <span id="year"></span> Chen En-Yu</span>
+    <span data-i18n="foot_thanks">感謝瀏覽</span>
+    <a href="#top" data-i18n="foot_top">回到頂端 ↑</a>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Work viewer">
+  <div class="lb__bar">
+    <div class="lb__meta">
+      <div class="lb__t" id="lbTitle"></div>
+      <div class="lb__c" id="lbCount"></div>
+    </div>
+    <button class="lb__x" id="lbClose" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none"><path d="m5 5 14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+  <div class="lb__stage" id="lbStage">
+    <button class="lb__nav lb__nav--prev" id="lbPrev" type="button" aria-label="Previous">
+      <svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg>
+    </button>
+    <button class="lb__nav lb__nav--next" id="lbNext" type="button" aria-label="Next">
+      <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+  </div>
+  <div class="lb__film" id="lbFilm"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
