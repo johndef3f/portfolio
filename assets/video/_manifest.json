@@ -70,5 +70,11 @@
   "src": "assets/video/motion-6.mp4",
   "poster": "assets/poster/motion-6.jpg",
   "thumb": "assets/poster/motion-6-t.jpg"
+ },
+ "web-game": {
+  "bytes": 22073956,
+  "src": "assets/video/web-game.mp4",
+  "poster": "assets/poster/web-game.jpg",
+  "thumb": "assets/poster/web-game-t.jpg"
  }
 }

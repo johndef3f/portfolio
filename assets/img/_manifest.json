@@ -410,5 +410,55 @@
    "full": "assets/img/poster-02.jpg",
    "thumb": "assets/img/poster-02-t.jpg"
   }
+ ],
+ "mexico": [
+  {
+   "id": "mexico-01",
+   "src_name": "325b4918-c057-4438-8c98-61378cf82885.jpg",
+   "w": 1972,
+   "h": 825,
+   "full": "assets/img/mexico-01.jpg",
+   "thumb": "assets/img/mexico-01-t.jpg"
+  },
+  {
+   "id": "mexico-02",
+   "src_name": "5d27d642-5f3f-4a18-b5f5-4051fceedb09.jpg",
+   "w": 1972,
+   "h": 825,
+   "full": "assets/img/mexico-02.jpg",
+   "thumb": "assets/img/mexico-02-t.jpg"
+  },
+  {
+   "id": "mexico-03",
+   "src_name": "c274db9a-a3c5-4158-ab0c-47bcd9e87f5d.jpg",
+   "w": 1972,
+   "h": 825,
+   "full": "assets/img/mexico-03.jpg",
+   "thumb": "assets/img/mexico-03-t.jpg"
+  },
+  {
+   "id": "mexico-04",
+   "src_name": "dd5bae8b-b5a1-4d47-a1e2-fc0995cd0649.jpg",
+   "w": 1972,
+   "h": 825,
+   "full": "assets/img/mexico-04.jpg",
+   "thumb": "assets/img/mexico-04-t.jpg"
+  },
+  {
+   "id": "mexico-05",
+   "src_name": "e6395078-5928-4a23-9e32-12f1444895a3.jpg",
+   "w": 1972,
+   "h": 825,
+   "full": "assets/img/mexico-05.jpg",
+   "thumb": "assets/img/mexico-05-t.jpg"
+  },
+  {
+   "id": "mexico-06",
+   "src_name": "f70a46bb-0e68-4793-8d70-69ffd244fecd.jpg",
+   "w": 1972,
+   "h": 825,
+   "full": "assets/img/mexico-06.jpg",
+   "thumb": "assets/img/mexico-06-t.jpg"
+  }
  ]
 }

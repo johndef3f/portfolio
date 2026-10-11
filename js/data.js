@@ -50,8 +50,8 @@ var DATA = {
    "en": "Motion work"
   },
   "work_title": {
-   "zh": "動畫與<em>動態影像</em>",
-   "en": "Film &amp; <em>Motion</em>"
+   "zh": "動畫與<em>互動影像</em>",
+   "en": "Film, Game &amp; <em>Motion</em>"
   },
   "work_aside": {
    "zh": "{p} 件專案 · 共 {i} 支影片。點擊卡片播放並查看作品說明。",
@@ -260,6 +260,41 @@ var DATA = {
   "role_en": "Visual Design / Concept Art"
  },
  "works": [
+  {
+   "credits_zh": [],
+   "credits_en": [],
+   "id": "web-game",
+   "cat": "game",
+   "kind": "video",
+   "wide": true,
+   "cover": "assets/poster/web-game.jpg",
+   "title_zh": "巴比倫巨塔_3d網頁遊戲",
+   "title_en": "Tower of Babel — 3D Web Game",
+   "subtitle_zh": "瀏覽器即時運行的 3D 遊戲",
+   "subtitle_en": "A real-time 3D game running in the browser",
+   "desc_zh": "在瀏覽器中即時運行的 3D 遊戲開發實錄。場域是一座向上收束的巨塔內部，青綠冷光打在格狀牆面與鋼架樓層上，中央立著巨大的十字架與受難像，一圈人群沉默地圍繞底座。玩家可自由移動視角與走位，靠近角色即觸發 NPC 對話，對話內容帶出賣身契與礦坑勞動的敘事線。畫面右側是即時參數面板，可直接調整場景環境、光照、攝影機、NPC 與小地圖設定。",
+   "desc_en": "A development capture of a 3D game running live in the browser. The space is the interior of a tower that narrows as it rises: cold teal light across grid walls and steel floors, a monumental crucifix at the centre, a silent crowd ringing its base. The player moves the camera and walks freely; approaching a figure triggers NPC dialogue that carries a narrative of indenture and mine labour. A live parameter panel on the right drives scene, lighting, camera, NPC and minimap settings.",
+   "tags_zh": [
+    "3D 網頁遊戲",
+    "即時 3D",
+    "場景設計",
+    "NPC 對話系統"
+   ],
+   "tags_en": [
+    "3D Web Game",
+    "Real-time 3D",
+    "Environment Design",
+    "NPC Dialogue"
+   ],
+   "items": [
+    {
+     "type": "video",
+     "src": "assets/video/web-game.mp4",
+     "poster": "assets/poster/web-game.jpg",
+     "thumb": "assets/poster/web-game-t.jpg"
+    }
+   ]
+  },
   {
    "credits_zh": [
     "剪輯成品",
@@ -561,6 +596,11 @@ var DATA = {
    "id": "webui",
    "zh": "網站介面",
    "en": "Web UI"
+  },
+  {
+   "id": "mexico",
+   "zh": "UE 場景",
+   "en": "UE Scene"
   }
  ],
  "gallery": [
@@ -593,6 +633,16 @@ var DATA = {
    "thumb": "assets/img/scene-12-t.jpg",
    "w": 4961,
    "h": 3508
+  },
+  {
+   "id": "mexico-01",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-01.jpg",
+   "thumb": "assets/img/mexico-01-t.jpg",
+   "w": 1972,
+   "h": 825
   },
   {
    "id": "webui-01",
@@ -683,6 +733,16 @@ var DATA = {
    "thumb": "assets/img/appui-01-t.jpg",
    "w": 1080,
    "h": 1920
+  },
+  {
+   "id": "mexico-02",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-02.jpg",
+   "thumb": "assets/img/mexico-02-t.jpg",
+   "w": 1972,
+   "h": 825
   },
   {
    "id": "webui-08",
@@ -785,6 +845,16 @@ var DATA = {
    "h": 1061
   },
   {
+   "id": "mexico-03",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-03.jpg",
+   "thumb": "assets/img/mexico-03-t.jpg",
+   "w": 1972,
+   "h": 825
+  },
+  {
    "id": "gameui-01",
    "cat": "gameui",
    "folder_zh": "遊戲設計",
@@ -823,6 +893,16 @@ var DATA = {
    "thumb": "assets/img/webui-05-t.jpg",
    "w": 1882,
    "h": 1056
+  },
+  {
+   "id": "mexico-04",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-04.jpg",
+   "thumb": "assets/img/mexico-04-t.jpg",
+   "w": 1972,
+   "h": 825
   },
   {
    "id": "character-08",
@@ -955,6 +1035,16 @@ var DATA = {
    "h": 1134
   },
   {
+   "id": "mexico-05",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-05.jpg",
+   "thumb": "assets/img/mexico-05-t.jpg",
+   "w": 1972,
+   "h": 825
+  },
+  {
    "id": "character-13",
    "cat": "character",
    "folder_zh": "角色",
@@ -1023,6 +1113,16 @@ var DATA = {
    "thumb": "assets/img/webui-09-t.jpg",
    "w": 1879,
    "h": 1057
+  },
+  {
+   "id": "mexico-06",
+   "cat": "mexico",
+   "folder_zh": "Mexico_UE_project",
+   "folder_en": "Mexico_UE_project",
+   "src": "assets/img/mexico-06.jpg",
+   "thumb": "assets/img/mexico-06-t.jpg",
+   "w": 1972,
+   "h": 825
   },
   {
    "id": "scene-05",
