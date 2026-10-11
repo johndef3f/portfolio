@@ -65,7 +65,8 @@
     var html = '';
     html += '<button class="card rv' + (w.wide ? ' card--wide' : '') + '" type="button" data-id="' + w.id + '" data-cat="' + w.cat + '" aria-label="' + title + '">';
     html +=   '<div class="card__media">';
-    html +=     '<img src="' + w.cover + '" alt="' + title + '" loading="lazy" decoding="async">';
+    html +=     '<img class="fill" src="' + w.cover + '" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    html +=     '<img class="shot" src="' + w.cover + '" alt="' + title + '" loading="lazy" decoding="async">';
     html +=     '<span class="card__idx">' + (i < 9 ? '0' : '') + (i + 1) + '</span>';
     html +=     '<span class="card__kind">' + kind + '</span>';
     if (w.kind === 'video') html += '<span class="card__play">' + ICON_PLAY + '</span>';
@@ -159,6 +160,8 @@
              '<img src="' + (it.thumb || it.poster) + '" alt="" loading="lazy"></button>';
     }).join('');
 
+    renderInfo(w);
+
     var single = w.items.length < 2;
     $('#lbPrev').style.display = single ? 'none' : '';
     $('#lbNext').style.display = single ? 'none' : '';
@@ -168,6 +171,18 @@
     document.body.style.overflow = 'hidden';
     showItem(LB.idx);
     $('#lbClose').focus();
+  }
+
+  function renderInfo(w) {
+    var desc    = LANG === 'en' ? w.desc_en : w.desc_zh;
+    var credits = LANG === 'en' ? w.credits_en : w.credits_zh;
+    var html = '<p>' + desc + '</p>';
+    if (credits && credits.length) {
+      html += '<div class="lb__credits"><b>' + t('credits') + '</b>' +
+              credits.map(function (c) { return '<span>' + c + '</span>'; }).join('') +
+              '</div>';
+    }
+    $('#lbInfo').innerHTML = html;
   }
 
   function showItem(i) {
@@ -296,6 +311,7 @@
         renderProcess();
         if (LB.work) {
           $('#lbTitle').textContent = LANG === 'en' ? LB.work.title_en : LB.work.title_zh;
+          renderInfo(LB.work);
         }
       });
     });

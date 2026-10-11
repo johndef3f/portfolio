@@ -113,6 +113,10 @@ var DATA = {
    "zh": "寄信給我",
    "en": "Email me"
   },
+  "credits": {
+   "zh": "我負責的項目",
+   "en": "My role"
+  },
   "foot_thanks": {
    "zh": "感謝瀏覽",
    "en": "Thanks for visiting"
@@ -147,11 +151,6 @@ var DATA = {
    "id": "ui",
    "zh": "介面設計",
    "en": "Interface"
-  },
-  {
-   "id": "graphic",
-   "zh": "平面設計",
-   "en": "Graphic"
   }
  ],
  "steps": [
@@ -188,12 +187,20 @@ var DATA = {
  ],
  "tools": [
   {
-   "k": "Ps",
-   "n": "Photoshop"
+   "k": "Ma",
+   "n": "Autodesk Maya"
   },
   {
-   "k": "Ai",
-   "n": "Illustrator"
+   "k": "Zb",
+   "n": "ZBrush"
+  },
+  {
+   "k": "Sp",
+   "n": "Substance Painter"
+  },
+  {
+   "k": "Td",
+   "n": "TouchDesigner"
   },
   {
    "k": "Ae",
@@ -204,20 +211,28 @@ var DATA = {
    "n": "Premiere Pro"
   },
   {
-   "k": "Bl",
-   "n": "Blender"
+   "k": "Ps",
+   "n": "Photoshop"
   },
   {
-   "k": "Ma",
-   "n": "Maya"
+   "k": "Ai",
+   "n": "Illustrator"
   },
   {
-   "k": "Fi",
-   "n": "Figma"
+   "k": "Id",
+   "n": "InDesign"
   },
   {
-   "k": "Pr",
-   "n": "Procreate"
+   "k": "Cs",
+   "n": "Clip Studio Paint"
+  },
+  {
+   "k": "Gp",
+   "n": "ChatGPT"
+  },
+  {
+   "k": "Gm",
+   "n": "Gemini"
   }
  ],
  "site": {
@@ -230,13 +245,23 @@ var DATA = {
  },
  "works": [
   {
+   "credits_zh": [
+    "剪輯成品",
+    "場景繪製",
+    "場景設計"
+   ],
+   "credits_en": [
+    "Final Edit",
+    "Environment Painting",
+    "Environment Design"
+   ],
    "id": "covered-life",
    "cat": "anim",
    "kind": "video",
    "wide": true,
    "cover": "assets/poster/covered-life.jpg",
-   "title_zh": "蓋住的人生",
-   "title_en": "Covered Life",
+   "title_zh": "Cover life",
+   "title_en": "Cover life",
    "subtitle_zh": "被標語蓋住的成長風景",
    "subtitle_en": "Growing up under someone else's slogan",
    "desc_zh": "一名背著書包的少年站在「成功路」的路牌下，對街的老屋被「書中自有黃金屋」的巨幅帆布整個蓋住。全片以 2D 數位手繪與分層場景動畫完成，從青亮的白日推進到車窗外的暗夜街口，最後收在逆光的黃昏與一根寫滿粉筆塗鴉的電線桿。用光線與彩度的落差，談升學標語如何一層層蓋過一個人原本的樣子。",
@@ -261,13 +286,41 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [
+    "前期概念美術",
+    "3D 建模",
+    "材質風格負責人",
+    "現實世界與 AI 世界材質製作",
+    "3D 場景設計",
+    "3D Animation",
+    "3D Lighting",
+    "螢幕 UI 動態圖像影片製作",
+    "後期調色",
+    "音效與配樂外包接洽負責人",
+    "後期剪輯輸出最終完成品",
+    "標準字設計"
+   ],
+   "credits_en": [
+    "Concept Art",
+    "3D Modelling",
+    "Material Art Direction",
+    "Real-world & AI-world Texturing",
+    "3D Environment Design",
+    "3D Animation",
+    "3D Lighting",
+    "Screen UI Motion Graphics",
+    "Color Grading",
+    "Sound & Music Outsourcing Lead",
+    "Final Edit & Delivery",
+    "Logotype Design"
+   ],
    "id": "ambition",
    "cat": "anim",
    "kind": "video",
    "wide": false,
    "cover": "assets/poster/ambition.jpg",
-   "title_zh": "野心",
-   "title_en": "Ambition",
+   "title_zh": "算什麼，AI? Just One Clik ?",
+   "title_en": "Just One Clik ?",
    "subtitle_zh": "當 AI 的便利開始耗電",
    "subtitle_en": "The energy bill behind every AI call",
    "desc_zh": "寬銀幕 3D 敘事短片。鏡頭從一台桌布寫著 LOVE THE EARTH 的電腦出發，潛進宛如工業峽谷的資料中心：紫藍色調的散熱塔噴出熱氣，載著資料的小型飛行器在高塔之間穿梭，最後回到一個 AI 對話介面，以生成一張蛋糕圖收尾。中英雙語字幕，節奏由輕快轉沉，談的是每一次呼叫 AI 背後真實的用電代價。",
@@ -292,6 +345,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "afterglow",
    "cat": "anim",
    "kind": "video",
@@ -329,6 +384,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "zhaoan",
    "cat": "anim",
    "kind": "video",
@@ -360,26 +417,30 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "front",
    "cat": "anim",
    "kind": "video",
    "wide": false,
    "cover": "assets/poster/front.jpg",
-   "title_zh": "貓與鼠角色習作",
-   "title_en": "Cat & Mouse Character Study",
-   "subtitle_zh": "經典卡通角色的立體重製",
-   "subtitle_en": "A 3D take on a classic cartoon duo",
-   "desc_zh": "以經典卡通的貓鼠搭檔為題的 3D 角色習作，畫面是一顆固定的正面鏡頭：灰藍漸層背景、地面打出一圈暖色光暈，大貓單腳撐地、雙手抱著頭做出誇張的得意姿態，小鼠站在前景抬頭看他，一高一低的體型落差撐起整個構圖。練習重點放在造型比例、五官塑形與毛感材質，以及乾淨的棚拍式打光與算圖。",
-   "desc_en": "A 3D character study of a classic cartoon cat-and-mouse pair, held in a single front-on shot. A blue-grey gradient backdrop, a warm pool of light on the floor, the cat balanced on one foot with both hands behind his head in an exaggerated swagger, the small mouse planted in the foreground looking up at him. The focus is proportion, facial sculpting, surface feel and clean studio lighting.",
+   "title_zh": "貓與鼠_走路動畫表演",
+   "title_en": "Cat & Mouse — Walk Cycle Performance",
+   "subtitle_zh": "角色走路動畫與表演練習",
+   "subtitle_en": "Walk cycle and character acting study",
+   "desc_zh": "以經典卡通貓鼠對手戲為題的 3D 角色動畫練習，重點在走路循環與表演節奏。藍灰漸層背景、地面一圈暖色打光，大貓單腳撐地、雙手抱頭擺出得意姿態，小鼠站在前景抬頭看他，一高一低拉出體型對比。練習目標是讓走路的重心轉移、身體擺盪與情緒表演讀得出來，同時兼顧比例、臉部造型與乾淨的棚拍打光。",
+   "desc_en": "A 3D character animation study built on a classic cartoon cat-and-mouse pairing, focused on walk cycles and acting timing. Against a blue-grey gradient and a warm pool of floor light, the cat balances on one foot with both hands behind his head in an exaggerated swagger while the small mouse looks up from the foreground. The goal is readable weight shift, body swing and performance — alongside clean proportion, facial sculpting and studio lighting.",
    "tags_zh": [
-    "3D角色",
-    "建模與材質",
-    "燈光算圖"
+    "3D 動畫",
+    "角色動畫",
+    "走路循環",
+    "表演練習"
    ],
    "tags_en": [
-    "3D Character",
-    "Modeling & Texturing",
-    "Lighting & Render"
+    "3D Animation",
+    "Character Animation",
+    "Walk Cycle",
+    "Acting Study"
    ],
    "items": [
     {
@@ -391,6 +452,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "motion",
    "cat": "motion",
    "kind": "video",
@@ -452,6 +515,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "character",
    "cat": "concept",
    "kind": "image",
@@ -554,6 +619,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "scene",
    "cat": "concept",
    "kind": "image",
@@ -646,6 +713,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "gameui",
    "cat": "ui",
    "kind": "image",
@@ -698,6 +767,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "appui",
    "cat": "ui",
    "kind": "image",
@@ -755,6 +826,8 @@ var DATA = {
    ]
   },
   {
+   "credits_zh": [],
+   "credits_en": [],
    "id": "webui",
    "cat": "ui",
    "kind": "image",
@@ -823,43 +896,6 @@ var DATA = {
      "type": "image",
      "src": "assets/img/webui-09.jpg",
      "thumb": "assets/img/webui-09-t.jpg"
-    }
-   ]
-  },
-  {
-   "id": "poster",
-   "cat": "graphic",
-   "kind": "image",
-   "wide": false,
-   "cover": "assets/img/poster-01-t.jpg",
-   "title_zh": "海報設計",
-   "title_en": "Poster Design",
-   "subtitle_zh": "插畫主視覺與遊戲提案",
-   "subtitle_en": "Illustrated key visuals and game pitch",
-   "desc_zh": "兩張風格完全分開的主視覺。《靈感的盛宴》為設計展海報，以新藝術風格的拱形框架與花草紋樣包覆人物，粉紅與螢光綠的高對比配色搭配流動的髮絲與金魚，拱頂圓章以設計軟體圖示取代傳統徽飾。《Hotel BABEL 巴別塔大飯店》則是遊戲企劃提案海報，深綠銅金的壓低色調、天使石像居中，右側以引線標註三層樓關卡結構，將設計理念與玩法整合進單張版面。",
-   "desc_en": "Two key visuals with deliberately separate voices. A design-exhibition poster works in Art Nouveau language — an arched frame, floral borders, a figure with flowing green hair and goldfish, high-contrast pink against fluorescent green, and medallions that replace traditional ornament with software icons. The second is a game pitch poster for Hotel Babel: muted deep green and brass, a centered stone angel, and leader lines annotating a three-level structure alongside concept and gameplay copy.",
-   "tags_zh": [
-    "海報設計",
-    "插畫",
-    "主視覺",
-    "版面編排"
-   ],
-   "tags_en": [
-    "Poster Design",
-    "Illustration",
-    "Key Visual",
-    "Layout"
-   ],
-   "items": [
-    {
-     "type": "image",
-     "src": "assets/img/poster-01.jpg",
-     "thumb": "assets/img/poster-01-t.jpg"
-    },
-    {
-     "type": "image",
-     "src": "assets/img/poster-02.jpg",
-     "thumb": "assets/img/poster-02-t.jpg"
     }
    ]
   }
