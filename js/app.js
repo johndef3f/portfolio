@@ -462,6 +462,41 @@
     });
   }
 
+  /* ---------- 8b. Hero backdrop ---------- */
+  function initHeroVideo() {
+    var v = document.getElementById('heroVid');
+    if (!v) return;
+
+    // the poster alone stands in whenever playing would be wasteful or unwanted
+    if (REDUCED) return;
+    if (window.innerWidth < 720) return;
+    var conn = navigator.connection || navigator.webkitConnection;
+    if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ''))) return;
+
+    v.src = 'assets/video/hero-loop.mp4';
+
+    var wanted = true;
+    function tryPlay() {
+      if (!wanted) return;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () { /* autoplay refused: poster stays */ });
+    }
+    tryPlay();
+
+    // stop decoding once the hero has scrolled away, or the tab is hidden
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          wanted = e.isIntersecting;
+          if (wanted) tryPlay(); else v.pause();
+        });
+      }, { threshold: 0.05 }).observe(document.getElementById('top'));
+    }
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) v.pause(); else tryPlay();
+    });
+  }
+
   /* ---------- 9. Boot ---------- */
   function boot() {
     $('#year').textContent = new Date().getFullYear();
@@ -475,6 +510,7 @@
     observeReveals(document);
     initScroll();
     initEvents();
+    initHeroVideo();
     requestAnimationFrame(function () { document.body.classList.add('is-ready'); });
   }
 
