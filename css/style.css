@@ -300,19 +300,19 @@ section{position:relative;z-index:2}
 .card:hover .card__media::after{opacity:.72}
 
 .card__idx{
-  position:absolute;top:14px;left:16px;z-index:3;
+  position:absolute;top:14px;left:16px;z-index:4;
   font-family:var(--serif);font-size:13px;letter-spacing:.1em;
   color:var(--bone-dim);
 }
 .card__kind{
-  position:absolute;top:14px;right:16px;z-index:3;
+  position:absolute;top:14px;right:16px;z-index:4;
   font-size:9px;letter-spacing:.2em;text-transform:uppercase;
   color:var(--bone);background:rgba(90,16,36,.72);
   backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
   padding:5px 10px;border-radius:999px;border:1px solid rgba(201,96,123,.28);
 }
 .card__count{
-  position:absolute;bottom:14px;right:16px;z-index:3;
+  position:absolute;bottom:14px;right:16px;z-index:4;
   font-size:10px;letter-spacing:.16em;color:var(--bone-dim);
   display:flex;align-items:center;gap:7px;
   opacity:0;transform:translateY(8px);
@@ -321,7 +321,7 @@ section{position:relative;z-index:2}
 .card:hover .card__count{opacity:1;transform:translateY(0)}
 
 .card__play{
-  position:absolute;top:50%;left:50%;z-index:3;
+  position:absolute;top:50%;left:50%;z-index:4;
   width:58px;height:58px;margin:-29px 0 0 -29px;
   border-radius:50%;border:1px solid rgba(234,218,203,.5);
   background:rgba(7,4,5,.42);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
@@ -331,15 +331,54 @@ section{position:relative;z-index:2}
 .card__play svg{width:15px;height:15px;fill:var(--bone);margin-left:3px}
 .card:hover .card__play{background:var(--wine-500);border-color:var(--wine-400);transform:scale(1.12)}
 
+/* description lives on the cover, surfacing only on hover */
+.card__reveal{
+  position:absolute;inset:0;z-index:3;
+  display:flex;align-items:flex-end;
+  padding:22px 20px;
+  background:rgba(0,0,0,.72);
+  opacity:0;transition:opacity .45s var(--ease);
+  pointer-events:none;
+}
+.card__reveal p{
+  font-size:13px;line-height:1.85;color:#fff;
+  text-shadow:0 1px 12px rgba(0,0,0,.5);
+  transform:translateY(8px);
+  transition:transform .5s var(--ease-out);
+}
+.card:hover .card__reveal,.card:focus-visible .card__reveal{opacity:1}
+.card:hover .card__reveal p,.card:focus-visible .card__reveal p{transform:translateY(0)}
+
 .card__body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:9px;flex:1}
 .card__title{
   font-family:var(--serif);font-weight:500;
   font-size:1.26rem;line-height:1.28;letter-spacing:.005em;
 }
 .card__sub{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine-400)}
-.card__desc{
-  font-size:12.8px;color:var(--bone-dim);line-height:1.75;
-  display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+
+/* "我負責的項目" — the headline fact on a motion card */
+.card__role{
+  margin-top:3px;padding-top:12px;
+  border-top:1px solid var(--line);
+}
+.card__role > b{
+  display:block;margin-bottom:9px;
+  font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--wine-400);
+}
+.card__roleList{display:flex;flex-wrap:wrap;gap:7px}
+.card__roleList span{
+  font-size:13px;line-height:1.4;color:var(--bone);
+  border:1px solid rgba(168,37,70,.32);
+  background:rgba(90,16,36,.3);
+  border-radius:2px;padding:5px 11px;
+  transition:border-color .45s var(--ease),background .45s var(--ease);
+}
+.card:hover .card__roleList span{
+  border-color:rgba(201,96,123,.45);background:rgba(90,16,36,.5);
+}
+.card__roleList span.more{
+  color:var(--bone-dim);background:none;border-style:dashed;
 }
 .card__tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:12px}
 .tag{
@@ -354,7 +393,8 @@ section{position:relative;z-index:2}
   .card--wide{grid-column:span 2}
   .card--wide .card__media{aspect-ratio:21/9}
   .card--wide .card__title{font-size:1.65rem}
-  .card--wide .card__desc{-webkit-line-clamp:2;line-clamp:2}
+  .card--wide .card__reveal{padding:28px 26px}
+  .card--wide .card__reveal p{font-size:14px;max-width:72ch}
 }
 
 /* ---------- 9b. Gallery wall (masonry) ---------- */
@@ -363,6 +403,10 @@ section{position:relative;z-index:2}
    CSS `columns` would fill each column top-to-bottom instead, which turns a
    folder-ordered list into one subject per column. */
 .wall{
+  display:flex;flex-direction:column;
+  gap:clamp(10px,1.4vw,20px);
+}
+.wall__group{
   display:flex;
   align-items:flex-start;
   gap:clamp(10px,1.4vw,20px);
@@ -558,19 +602,26 @@ section{position:relative;z-index:2}
 }
 .lb__info::-webkit-scrollbar{width:4px}
 .lb__info::-webkit-scrollbar-thumb{background:var(--wine-700);border-radius:9px}
-.lb__info p{font-size:12.8px;line-height:1.8;color:var(--bone-dim);max-width:88ch}
-.lb__credits{
-  margin-top:11px;padding-top:11px;border-top:1px solid var(--line-soft);
-  display:flex;flex-wrap:wrap;gap:7px;align-items:baseline;
+/* role credits lead the panel, set larger than the description */
+.lb__credits{margin-bottom:14px}
+.lb__credits > b{
+  display:block;margin-bottom:10px;
+  font-size:11.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--wine-400);
 }
-.lb__credits b{
-  font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--wine-400);font-weight:500;flex:none;margin-right:4px;
+.lb__creditList{display:flex;flex-wrap:wrap;gap:8px}
+.lb__creditList span{
+  font-size:14px;line-height:1.4;color:var(--bone);
+  border:1px solid rgba(168,37,70,.34);
+  background:rgba(90,16,36,.32);
+  border-radius:2px;padding:6px 13px;
 }
-.lb__credits span{
-  font-size:11px;color:var(--bone-dim);
-  border:1px solid var(--line);border-radius:2px;padding:3px 9px;
+.lb__info p{
+  font-size:12.8px;line-height:1.8;color:var(--bone-dim);max-width:88ch;
+  padding-top:13px;border-top:1px solid var(--line-soft);
 }
+.lb__credits + p{margin-top:0}
+.lb__info > p:first-child{padding-top:0;border-top:0}
 @media (max-width:720px){
   .lb__info{max-height:30vh;padding-block:12px}
   .lb__info p{font-size:12.2px}

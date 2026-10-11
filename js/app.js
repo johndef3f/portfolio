@@ -56,6 +56,7 @@
     var sub   = LANG === 'en' ? w.subtitle_en : w.subtitle_zh;
     var desc  = LANG === 'en' ? w.desc_en : w.desc_zh;
     var tags  = (LANG === 'en' ? w.tags_en : w.tags_zh) || [];
+    var credits = (LANG === 'en' ? w.credits_en : w.credits_zh) || [];
     var kind  = t('kind_' + w.kind);
     var n     = w.items.length;
     var countLabel = w.kind === 'video'
@@ -71,10 +72,22 @@
     if (w.kind === 'video') html += '<span class="card__play">' + ICON_PLAY + '</span>';
     html +=     '<span class="card__count">' + countLabel + ' <span aria-hidden="true">→</span></span>';
     html +=   '</div>';
+    html +=     '<div class="card__reveal"><p>' + desc + '</p></div>';
+    html +=   '</div>';
     html +=   '<div class="card__body">';
     html +=     '<div class="card__sub">' + sub + '</div>';
     html +=     '<h3 class="card__title">' + title + '</h3>';
-    html +=     '<p class="card__desc">' + desc + '</p>';
+    if (credits.length) {
+      var shown = credits.slice(0, 6);
+      var rest  = credits.length - shown.length;
+      html +=   '<div class="card__role">';
+      html +=     '<b>' + t('credits') + '</b>';
+      html +=     '<div class="card__roleList">' +
+                  shown.map(function (c) { return '<span>' + c + '</span>'; }).join('') +
+                  (rest > 0 ? '<span class="more">+' + rest + '</span>' : '') +
+                  '</div>';
+      html +=   '</div>';
+    }
     html +=     '<div class="card__tags">' + tags.map(function (x) {
                   return '<span class="tag">' + x + '</span>';
                 }).join('') + '</div>';
@@ -130,20 +143,31 @@
     var n = wallColumns();
     wallCols = n;
 
-    // shortest-column placement, walking the list in order
-    var cols = [], heights = [];
-    for (var c = 0; c < n; c++) { cols.push([]); heights.push(0); }
+    // Each project folder becomes its own block of columns, so one project
+    // can never interleave with the next. Within a block, tiles go into
+    // whichever column is currently shortest (Pinterest-style balancing).
+    var groups = [];
     GAL.forEach(function (g, i) {
-      var shortest = 0;
-      for (var c = 1; c < n; c++) {
-        if (heights[c] < heights[shortest]) shortest = c;
+      if (!groups.length || groups[groups.length - 1].folder !== g.folder_zh) {
+        groups.push({ folder: g.folder_zh, tiles: [] });
       }
-      cols[shortest].push(tileMarkup(g, i));
-      heights[shortest] += (g.w && g.h) ? (g.h / g.w) : 1;   // normalized height
+      groups[groups.length - 1].tiles.push({ g: g, i: i });
     });
 
-    $('#wall').innerHTML = cols.map(function (items) {
-      return '<div class="wall__col">' + items.join('') + '</div>';
+    $('#wall').innerHTML = groups.map(function (grp) {
+      var cols = [], heights = [];
+      for (var c = 0; c < n; c++) { cols.push([]); heights.push(0); }
+      grp.tiles.forEach(function (t) {
+        var shortest = 0;
+        for (var c = 1; c < n; c++) {
+          if (heights[c] < heights[shortest]) shortest = c;
+        }
+        cols[shortest].push(tileMarkup(t.g, t.i));
+        heights[shortest] += (t.g.w && t.g.h) ? (t.g.h / t.g.w) : 1;
+      });
+      return '<div class="wall__group">' + cols.map(function (items) {
+        return '<div class="wall__col">' + items.join('') + '</div>';
+      }).join('') + '</div>';
     }).join('');
 
     observeReveals($('#wall'));
@@ -253,12 +277,14 @@
   function renderInfo(w) {
     var desc    = LANG === 'en' ? w.desc_en : w.desc_zh;
     var credits = LANG === 'en' ? w.credits_en : w.credits_zh;
-    var html = '<p>' + desc + '</p>';
+    var html = '';
     if (credits && credits.length) {
       html += '<div class="lb__credits"><b>' + t('credits') + '</b>' +
+              '<div class="lb__creditList">' +
               credits.map(function (c) { return '<span>' + c + '</span>'; }).join('') +
-              '</div>';
+              '</div></div>';
     }
+    html += '<p>' + desc + '</p>';
     $('#lbInfo').innerHTML = html;
   }
 
