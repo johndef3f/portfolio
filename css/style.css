@@ -157,17 +157,26 @@ section{position:relative;z-index:2}
   position:absolute;top:0;bottom:0;
   left:50%;transform:translateX(-50%);
   width:100vw;
+  display:grid;place-items:center;
   overflow:hidden;pointer-events:none;
 }
+/* The clip is shown whole at its native 1:1 — no cropping — so the machine
+   is never cut off. It is taller than wide relative to the viewport, so it
+   sits centred with the page showing either side. */
 .hero__bg video{
-  width:100%;height:100%;object-fit:cover;
-  /* The clip is a lit object on pure black, and #000 is darker than the
-     page ground, so at any opacity the frame reads as a dark rectangle.
-     `screen` makes black drop out entirely and keeps only the lit pixels,
-     so the machine floats on the page with no edge at all — and the clip
-     can then run at full strength without a visible boundary. */
-  mix-blend-mode:screen;
+  width:auto;height:100%;
+  max-width:100vw;
+  object-fit:contain;
   opacity:.8;
+  /* Two things soften the frame. `screen` drops the pure-black ground out
+     (it is darker than the page, which is what made the rectangle visible),
+     and the radial mask feathers whatever remains — the disc drive is a
+     circular subject, so a circular falloff follows its own shape. */
+  mix-blend-mode:screen;
+  -webkit-mask-image:radial-gradient(circle at 50% 50%,
+    #000 40%,rgba(0,0,0,.78) 58%,rgba(0,0,0,.3) 76%,transparent 92%);
+  mask-image:radial-gradient(circle at 50% 50%,
+    #000 40%,rgba(0,0,0,.78) 58%,rgba(0,0,0,.3) 76%,transparent 92%);
 }
 /* Under `screen` only the bright pixels survive, so the veil no longer has
    to fight a full-frame image — it just protects the headline. */
