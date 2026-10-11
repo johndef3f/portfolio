@@ -318,11 +318,13 @@ var DATA = {
   },
   {
    "credits_zh": [
+    "編劇",
     "剪輯成品",
     "場景繪製",
     "場景設計"
    ],
    "credits_en": [
+    "Screenwriting",
     "Final Edit",
     "Environment Painting",
     "Environment Design"
