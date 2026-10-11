@@ -64,7 +64,7 @@
       : n + ' ' + t('unit_image');
 
     var html = '';
-    var size = w.hero ? ' card--hero' : (w.wide ? ' card--wide' : '');
+    var size = ' card--' + (w.size || 's') + (w.hero ? ' card--hero' : '');
     html += '<button class="card rv' + size + '" type="button" data-id="' + w.id + '" data-cat="' + w.cat + '" aria-label="' + title + '">';
     html +=   '<div class="card__media">';
     html +=     '<img class="shot" src="' + w.cover + '" alt="' + title + '" loading="lazy" decoding="async">';

@@ -258,10 +258,12 @@ section{position:relative;z-index:2}
 .sec__aside{font-size:12.5px;color:var(--bone-faint);max-width:40ch;line-height:1.8}
 
 /* ---------- 9. Work cards ---------- */
+/* 12-column bed so cards can take deliberately uneven widths, giving the
+   wall an editorial rhythm instead of rows of identically sized tiles. */
 .work-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
-  gap:clamp(16px,2vw,26px);
+  grid-template-columns:repeat(12,1fr);
+  gap:clamp(20px,2.4vw,34px);
 }
 .card{
   position:relative;display:flex;flex-direction:column;
@@ -389,6 +391,17 @@ section{position:relative;z-index:2}
 }
 .card:hover .tag{border-color:rgba(168,37,70,.3);color:var(--bone-dim)}
 
+/* every card is full width until there is room to differentiate */
+.card{grid-column:1/-1}
+
+@media (min-width:860px){
+  .card--s{grid-column:span 5}
+  .card--m{grid-column:span 7}
+  .card--l{grid-column:1/-1}
+  .card--s .card__media{aspect-ratio:4/3}
+  .card--m .card__media{aspect-ratio:16/9}
+}
+
 /* hero card — the lead piece, full width of the grid */
 .card--hero{grid-column:1/-1}
 .card--hero .card__media{aspect-ratio:2/1}
@@ -409,11 +422,10 @@ section{position:relative;z-index:2}
 }
 
 @media (min-width:1080px){
-  .card--wide{grid-column:span 2}
-  .card--wide .card__media{aspect-ratio:21/9}
-  .card--wide .card__title{font-size:1.65rem}
-  .card--wide .card__reveal{padding:28px 26px}
-  .card--wide .card__reveal p{font-size:14px;max-width:72ch}
+  .card--l .card__media{aspect-ratio:21/9}
+  .card--l .card__title{font-size:1.65rem}
+  .card--l .card__reveal{padding:28px 26px}
+  .card--l .card__reveal p{font-size:14px;max-width:72ch}
 }
 
 /* ---------- 9b. Gallery wall (masonry) ---------- */
@@ -705,7 +717,7 @@ section{position:relative;z-index:2}
   .nav__burger.is-open i::before{transform:translateY(5px) rotate(45deg)}
   .nav__burger.is-open i::after{transform:translateY(-5px) rotate(-45deg)}
   .work-grid{grid-template-columns:1fr}
-  .card--wide{grid-column:auto}
+  .card--s,.card--m,.card--l{grid-column:1/-1}
   .lb__nav--prev{left:8px}
   .lb__nav--next{right:8px}
   .lb__film button{width:62px;height:44px}
