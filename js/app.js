@@ -95,7 +95,6 @@
   }
 
   /* ---------- 3b. Gallery wall ---------- */
-  var ICON_ZOOM = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4M11 8v6M8 11h6"/></svg>';
   var GAL = [];   // currently displayed tiles, in display order
 
   function catName(id) {
@@ -103,14 +102,19 @@
     return c ? (LANG === 'en' ? c.en : c.zh) : id;
   }
 
+  // tile captions use the source folder name
+  function folderName(g) {
+    return LANG === 'en' ? g.folder_en : g.folder_zh;
+  }
+
   function renderWall(cat) {
     GAL = DATA.gallery.filter(function (g) { return cat === 'all' || g.cat === cat; });
     $('#wall').innerHTML = GAL.map(function (g, i) {
       var ratio = (g.w && g.h) ? (' style="aspect-ratio:' + g.w + '/' + g.h + '"') : '';
-      return '<button class="tile rv" type="button" data-i="' + i + '" aria-label="' + catName(g.cat) + '">' +
-             '<img src="' + g.thumb + '" alt="' + catName(g.cat) + '" loading="lazy" decoding="async"' + ratio + '>' +
-             '<span class="tile__cat">' + catName(g.cat) + '</span>' +
-             '<span class="tile__zoom">' + ICON_ZOOM + '</span>' +
+      var name = folderName(g);
+      return '<button class="tile rv" type="button" data-i="' + i + '" aria-label="' + name + '">' +
+             '<img src="' + g.thumb + '" alt="' + name + '" loading="lazy" decoding="async"' + ratio + '>' +
+             '<span class="tile__cat">' + name + '</span>' +
              '</button>';
     }).join('');
     observeReveals($('#wall'));
@@ -184,7 +188,7 @@
     LB.mode = 'gallery';
     LB.work = null;
     LB.items = GAL.map(function (g) {
-      return { type: 'image', src: g.src, thumb: g.thumb, cat: g.cat };
+      return { type: 'image', src: g.src, thumb: g.thumb, cat: g.cat, name: folderName(g) };
     });
     openCommon(start || 0, '');
   }
@@ -255,11 +259,11 @@
       node.src = it.src;
       node.alt = LB.work
         ? (LANG === 'en' ? LB.work.title_en : LB.work.title_zh) + ' ' + (LB.idx + 1)
-        : catName(it.cat);
+        : (it.name || '');
     }
     stage.appendChild(node);
 
-    if (LB.mode === 'gallery') $('#lbTitle').textContent = catName(it.cat);
+    if (LB.mode === 'gallery') $('#lbTitle').textContent = it.name || '';
     $('#lbCount').textContent = (LB.idx + 1) + ' / ' + items.length;
     $$('#lbFilm button').forEach(function (b, bi) {
       b.classList.toggle('is-on', bi === LB.idx);
@@ -366,8 +370,12 @@
         if (LB.mode === 'work' && LB.work) {
           $('#lbTitle').textContent = LANG === 'en' ? LB.work.title_en : LB.work.title_zh;
           renderInfo(LB.work);
-        } else if (LB.mode === 'gallery' && LB.items[LB.idx]) {
-          $('#lbTitle').textContent = catName(LB.items[LB.idx].cat);
+        } else if (LB.mode === 'gallery') {
+          var keep = LB.idx;
+          LB.items = GAL.map(function (g) {
+            return { type: 'image', src: g.src, thumb: g.thumb, cat: g.cat, name: folderName(g) };
+          });
+          if (LB.items[keep]) $('#lbTitle').textContent = LB.items[keep].name;
         }
       });
     });

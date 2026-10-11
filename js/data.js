@@ -567,38 +567,158 @@ var DATA = {
   {
    "id": "character-01",
    "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
    "src": "assets/img/character-01.jpg",
    "thumb": "assets/img/character-01-t.jpg",
    "w": 5031,
    "h": 3579
   },
   {
+   "id": "appui-04",
+   "cat": "appui",
+   "folder_zh": "手機介面",
+   "folder_en": "Mobile Interface",
+   "src": "assets/img/appui-04.jpg",
+   "thumb": "assets/img/appui-04-t.jpg",
+   "w": 1080,
+   "h": 1920
+  },
+  {
+   "id": "scene-12",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-12.jpg",
+   "thumb": "assets/img/scene-12-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "webui-01",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
+   "src": "assets/img/webui-01.jpg",
+   "thumb": "assets/img/webui-01-t.jpg",
+   "w": 1581,
+   "h": 890
+  },
+  {
    "id": "character-06",
    "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
    "src": "assets/img/character-06.jpg",
    "thumb": "assets/img/character-06-t.jpg",
    "w": 5031,
    "h": 3579
   },
   {
+   "id": "webui-02",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
+   "src": "assets/img/webui-02.jpg",
+   "thumb": "assets/img/webui-02-t.jpg",
+   "w": 1875,
+   "h": 1055
+  },
+  {
+   "id": "scene-13",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-13.jpg",
+   "thumb": "assets/img/scene-13-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
    "id": "character-03",
    "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
    "src": "assets/img/character-03.jpg",
    "thumb": "assets/img/character-03-t.jpg",
    "w": 4962,
    "h": 3509
   },
   {
+   "id": "gameui-03",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-03.jpg",
+   "thumb": "assets/img/gameui-03-t.jpg",
+   "w": 1919,
+   "h": 1079
+  },
+  {
+   "id": "scene-10",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-10.jpg",
+   "thumb": "assets/img/scene-10-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
    "id": "character-02",
    "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
    "src": "assets/img/character-02.jpg",
    "thumb": "assets/img/character-02-t.jpg",
    "w": 4962,
    "h": 3509
   },
   {
+   "id": "appui-01",
+   "cat": "appui",
+   "folder_zh": "手機介面",
+   "folder_en": "Mobile Interface",
+   "src": "assets/img/appui-01.jpg",
+   "thumb": "assets/img/appui-01-t.jpg",
+   "w": 1080,
+   "h": 1920
+  },
+  {
+   "id": "webui-08",
+   "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
+   "src": "assets/img/webui-08.jpg",
+   "thumb": "assets/img/webui-08-t.jpg",
+   "w": 1882,
+   "h": 1062
+  },
+  {
+   "id": "gameui-04",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-04.jpg",
+   "thumb": "assets/img/gameui-04-t.jpg",
+   "w": 1441,
+   "h": 875
+  },
+  {
+   "id": "scene-04",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-04.jpg",
+   "thumb": "assets/img/scene-04-t.jpg",
+   "w": 1191,
+   "h": 842
+  },
+  {
    "id": "character-07",
    "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
    "src": "assets/img/character-07.jpg",
    "thumb": "assets/img/character-07-t.jpg",
    "w": 5031,
@@ -607,346 +727,322 @@ var DATA = {
   {
    "id": "character-11",
    "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
    "src": "assets/img/character-11.jpg",
    "thumb": "assets/img/character-11-t.jpg",
    "w": 4961,
    "h": 3508
   },
   {
-   "id": "character-12",
-   "cat": "character",
-   "src": "assets/img/character-12.jpg",
-   "thumb": "assets/img/character-12-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-10",
-   "cat": "character",
-   "src": "assets/img/character-10.jpg",
-   "thumb": "assets/img/character-10-t.jpg",
-   "w": 1385,
-   "h": 829
-  },
-  {
-   "id": "character-08",
-   "cat": "character",
-   "src": "assets/img/character-08.jpg",
-   "thumb": "assets/img/character-08-t.jpg",
-   "w": 1263,
-   "h": 824
-  },
-  {
-   "id": "character-09",
-   "cat": "character",
-   "src": "assets/img/character-09.jpg",
-   "thumb": "assets/img/character-09-t.jpg",
-   "w": 1259,
-   "h": 819
-  },
-  {
-   "id": "character-05",
-   "cat": "character",
-   "src": "assets/img/character-05.jpg",
-   "thumb": "assets/img/character-05-t.jpg",
-   "w": 5193,
-   "h": 4453
-  },
-  {
-   "id": "character-14",
-   "cat": "character",
-   "src": "assets/img/character-14.jpg",
-   "thumb": "assets/img/character-14-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-13",
-   "cat": "character",
-   "src": "assets/img/character-13.jpg",
-   "thumb": "assets/img/character-13-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-15",
-   "cat": "character",
-   "src": "assets/img/character-15.jpg",
-   "thumb": "assets/img/character-15-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "character-04",
-   "cat": "character",
-   "src": "assets/img/character-04.jpg",
-   "thumb": "assets/img/character-04-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "scene-12",
-   "cat": "scene",
-   "src": "assets/img/scene-12.jpg",
-   "thumb": "assets/img/scene-12-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "scene-13",
-   "cat": "scene",
-   "src": "assets/img/scene-13.jpg",
-   "thumb": "assets/img/scene-13-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "scene-10",
-   "cat": "scene",
-   "src": "assets/img/scene-10.jpg",
-   "thumb": "assets/img/scene-10-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "scene-04",
-   "cat": "scene",
-   "src": "assets/img/scene-04.jpg",
-   "thumb": "assets/img/scene-04-t.jpg",
-   "w": 1191,
-   "h": 842
-  },
-  {
    "id": "scene-11",
    "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
    "src": "assets/img/scene-11.jpg",
    "thumb": "assets/img/scene-11-t.jpg",
    "w": 2016,
    "h": 1134
   },
   {
-   "id": "scene-01",
-   "cat": "scene",
-   "src": "assets/img/scene-01.jpg",
-   "thumb": "assets/img/scene-01-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "scene-09",
-   "cat": "scene",
-   "src": "assets/img/scene-09.jpg",
-   "thumb": "assets/img/scene-09-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "scene-06",
-   "cat": "scene",
-   "src": "assets/img/scene-06.jpg",
-   "thumb": "assets/img/scene-06-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "scene-08",
-   "cat": "scene",
-   "src": "assets/img/scene-08.jpg",
-   "thumb": "assets/img/scene-08-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "scene-03",
-   "cat": "scene",
-   "src": "assets/img/scene-03.jpg",
-   "thumb": "assets/img/scene-03-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "scene-02",
-   "cat": "scene",
-   "src": "assets/img/scene-02.jpg",
-   "thumb": "assets/img/scene-02-t.jpg",
-   "w": 2016,
-   "h": 1134
-  },
-  {
-   "id": "scene-07",
-   "cat": "scene",
-   "src": "assets/img/scene-07.jpg",
-   "thumb": "assets/img/scene-07-t.jpg",
+   "id": "character-12",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-12.jpg",
+   "thumb": "assets/img/character-12-t.jpg",
    "w": 4961,
    "h": 3508
-  },
-  {
-   "id": "scene-05",
-   "cat": "scene",
-   "src": "assets/img/scene-05.jpg",
-   "thumb": "assets/img/scene-05-t.jpg",
-   "w": 4961,
-   "h": 3508
-  },
-  {
-   "id": "gameui-03",
-   "cat": "gameui",
-   "src": "assets/img/gameui-03.jpg",
-   "thumb": "assets/img/gameui-03-t.jpg",
-   "w": 1919,
-   "h": 1079
-  },
-  {
-   "id": "gameui-04",
-   "cat": "gameui",
-   "src": "assets/img/gameui-04.jpg",
-   "thumb": "assets/img/gameui-04-t.jpg",
-   "w": 1441,
-   "h": 875
-  },
-  {
-   "id": "gameui-01",
-   "cat": "gameui",
-   "src": "assets/img/gameui-01.jpg",
-   "thumb": "assets/img/gameui-01-t.jpg",
-   "w": 1877,
-   "h": 1043
-  },
-  {
-   "id": "gameui-02",
-   "cat": "gameui",
-   "src": "assets/img/gameui-02.jpg",
-   "thumb": "assets/img/gameui-02-t.jpg",
-   "w": 1872,
-   "h": 1050
-  },
-  {
-   "id": "gameui-05",
-   "cat": "gameui",
-   "src": "assets/img/gameui-05.jpg",
-   "thumb": "assets/img/gameui-05-t.jpg",
-   "w": 3073,
-   "h": 1976
-  },
-  {
-   "id": "appui-04",
-   "cat": "appui",
-   "src": "assets/img/appui-04.jpg",
-   "thumb": "assets/img/appui-04-t.jpg",
-   "w": 1080,
-   "h": 1920
-  },
-  {
-   "id": "appui-01",
-   "cat": "appui",
-   "src": "assets/img/appui-01.jpg",
-   "thumb": "assets/img/appui-01-t.jpg",
-   "w": 1080,
-   "h": 1920
   },
   {
    "id": "appui-05",
    "cat": "appui",
+   "folder_zh": "手機介面",
+   "folder_en": "Mobile Interface",
    "src": "assets/img/appui-05.jpg",
    "thumb": "assets/img/appui-05-t.jpg",
    "w": 1080,
    "h": 1920
   },
   {
-   "id": "appui-03",
-   "cat": "appui",
-   "src": "assets/img/appui-03.jpg",
-   "thumb": "assets/img/appui-03-t.jpg",
-   "w": 1080,
-   "h": 1920
-  },
-  {
-   "id": "appui-06",
-   "cat": "appui",
-   "src": "assets/img/appui-06.jpg",
-   "thumb": "assets/img/appui-06-t.jpg",
-   "w": 3078,
-   "h": 5460
-  },
-  {
-   "id": "appui-02",
-   "cat": "appui",
-   "src": "assets/img/appui-02.jpg",
-   "thumb": "assets/img/appui-02-t.jpg",
-   "w": 10631,
-   "h": 7079
-  },
-  {
-   "id": "webui-01",
-   "cat": "webui",
-   "src": "assets/img/webui-01.jpg",
-   "thumb": "assets/img/webui-01-t.jpg",
-   "w": 1581,
-   "h": 890
-  },
-  {
-   "id": "webui-02",
-   "cat": "webui",
-   "src": "assets/img/webui-02.jpg",
-   "thumb": "assets/img/webui-02-t.jpg",
-   "w": 1875,
-   "h": 1055
-  },
-  {
-   "id": "webui-08",
-   "cat": "webui",
-   "src": "assets/img/webui-08.jpg",
-   "thumb": "assets/img/webui-08-t.jpg",
-   "w": 1882,
-   "h": 1062
+   "id": "scene-01",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-01.jpg",
+   "thumb": "assets/img/scene-01-t.jpg",
+   "w": 2016,
+   "h": 1134
   },
   {
    "id": "webui-03",
    "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
    "src": "assets/img/webui-03.jpg",
    "thumb": "assets/img/webui-03-t.jpg",
    "w": 1884,
    "h": 1061
   },
   {
+   "id": "gameui-01",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-01.jpg",
+   "thumb": "assets/img/gameui-01-t.jpg",
+   "w": 1877,
+   "h": 1043
+  },
+  {
+   "id": "character-10",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-10.jpg",
+   "thumb": "assets/img/character-10-t.jpg",
+   "w": 1385,
+   "h": 829
+  },
+  {
+   "id": "scene-09",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-09.jpg",
+   "thumb": "assets/img/scene-09-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
    "id": "webui-05",
    "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
    "src": "assets/img/webui-05.jpg",
    "thumb": "assets/img/webui-05-t.jpg",
    "w": 1882,
    "h": 1056
   },
   {
+   "id": "character-08",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-08.jpg",
+   "thumb": "assets/img/character-08-t.jpg",
+   "w": 1263,
+   "h": 824
+  },
+  {
+   "id": "appui-03",
+   "cat": "appui",
+   "folder_zh": "手機介面",
+   "folder_en": "Mobile Interface",
+   "src": "assets/img/appui-03.jpg",
+   "thumb": "assets/img/appui-03-t.jpg",
+   "w": 1080,
+   "h": 1920
+  },
+  {
    "id": "webui-04",
    "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
    "src": "assets/img/webui-04.jpg",
    "thumb": "assets/img/webui-04-t.jpg",
    "w": 1883,
    "h": 1061
   },
   {
+   "id": "scene-06",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-06.jpg",
+   "thumb": "assets/img/scene-06-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "character-09",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-09.jpg",
+   "thumb": "assets/img/character-09-t.jpg",
+   "w": 1259,
+   "h": 819
+  },
+  {
+   "id": "gameui-02",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-02.jpg",
+   "thumb": "assets/img/gameui-02-t.jpg",
+   "w": 1872,
+   "h": 1050
+  },
+  {
+   "id": "scene-08",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-08.jpg",
+   "thumb": "assets/img/scene-08-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
    "id": "webui-06",
    "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
    "src": "assets/img/webui-06.jpg",
    "thumb": "assets/img/webui-06-t.jpg",
    "w": 1879,
    "h": 1059
   },
   {
+   "id": "character-05",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-05.jpg",
+   "thumb": "assets/img/character-05-t.jpg",
+   "w": 5193,
+   "h": 4453
+  },
+  {
+   "id": "scene-03",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-03.jpg",
+   "thumb": "assets/img/scene-03-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "character-14",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-14.jpg",
+   "thumb": "assets/img/character-14-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "appui-06",
+   "cat": "appui",
+   "folder_zh": "手機介面",
+   "folder_en": "Mobile Interface",
+   "src": "assets/img/appui-06.jpg",
+   "thumb": "assets/img/appui-06-t.jpg",
+   "w": 3078,
+   "h": 5460
+  },
+  {
+   "id": "scene-02",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-02.jpg",
+   "thumb": "assets/img/scene-02-t.jpg",
+   "w": 2016,
+   "h": 1134
+  },
+  {
+   "id": "character-13",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-13.jpg",
+   "thumb": "assets/img/character-13-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "appui-02",
+   "cat": "appui",
+   "folder_zh": "手機介面",
+   "folder_en": "Mobile Interface",
+   "src": "assets/img/appui-02.jpg",
+   "thumb": "assets/img/appui-02-t.jpg",
+   "w": 10631,
+   "h": 7079
+  },
+  {
    "id": "webui-07",
    "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
    "src": "assets/img/webui-07.jpg",
    "thumb": "assets/img/webui-07-t.jpg",
    "w": 1881,
    "h": 1058
   },
   {
+   "id": "gameui-05",
+   "cat": "gameui",
+   "folder_zh": "遊戲設計",
+   "folder_en": "Game Design",
+   "src": "assets/img/gameui-05.jpg",
+   "thumb": "assets/img/gameui-05-t.jpg",
+   "w": 3073,
+   "h": 1976
+  },
+  {
+   "id": "scene-07",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-07.jpg",
+   "thumb": "assets/img/scene-07-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-15",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-15.jpg",
+   "thumb": "assets/img/character-15-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
    "id": "webui-09",
    "cat": "webui",
+   "folder_zh": "電腦網站",
+   "folder_en": "Web",
    "src": "assets/img/webui-09.jpg",
    "thumb": "assets/img/webui-09-t.jpg",
    "w": 1879,
    "h": 1057
+  },
+  {
+   "id": "scene-05",
+   "cat": "scene",
+   "folder_zh": "場景",
+   "folder_en": "Scene",
+   "src": "assets/img/scene-05.jpg",
+   "thumb": "assets/img/scene-05-t.jpg",
+   "w": 4961,
+   "h": 3508
+  },
+  {
+   "id": "character-04",
+   "cat": "character",
+   "folder_zh": "角色",
+   "folder_en": "Character",
+   "src": "assets/img/character-04.jpg",
+   "thumb": "assets/img/character-04-t.jpg",
+   "w": 4961,
+   "h": 3508
   }
  ]
 };

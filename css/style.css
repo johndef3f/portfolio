@@ -359,12 +359,11 @@ section{position:relative;z-index:2}
 
 /* ---------- 9b. Gallery wall (masonry) ---------- */
 .wall{
-  column-count:4;
-  column-gap:clamp(10px,1.3vw,18px);
+  column-count:3;
+  column-gap:clamp(10px,1.4vw,20px);
 }
-@media (max-width:1280px){ .wall{column-count:3} }
-@media (max-width:860px) { .wall{column-count:2} }
-@media (max-width:460px) { .wall{column-count:1} }
+@media (max-width:860px){ .wall{column-count:2} }
+@media (max-width:460px){ .wall{column-count:1} }
 
 .tile{
   display:block;width:100%;padding:0;border:0;
@@ -377,49 +376,30 @@ section{position:relative;z-index:2}
 }
 .tile img{
   display:block;width:100%;height:auto;
-  filter:saturate(.86) contrast(1.03) brightness(.86);
-  transform:scale(1.005);
-  transition:transform 1s var(--ease-out),filter .6s var(--ease);
+  transition:filter .45s var(--ease);
 }
+/* flat 30% darkening on hover — no gradient, no vignette */
 .tile::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(to top,rgba(7,4,5,.72),transparent 46%);
-  opacity:0;transition:opacity .5s var(--ease);
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+  background:#000;opacity:0;
+  transition:opacity .45s var(--ease);
 }
 .tile:hover,.tile:focus-visible{
-  transform:translateY(-4px);
-  border-color:rgba(168,37,70,.42);
-  box-shadow:0 20px 44px -22px rgba(0,0,0,.92),0 0 32px -18px rgba(168,37,70,.5);
+  border-color:rgba(168,37,70,.38);
 }
-.tile:hover img,.tile:focus-visible img{
-  transform:scale(1.045);filter:saturate(1) contrast(1) brightness(1);
-}
-.tile:hover::after,.tile:focus-visible::after{opacity:1}
+.tile:hover::after,.tile:focus-visible::after{opacity:.3}
 
+/* caption sits straight on the image: white, no frame, no chip */
 .tile__cat{
-  position:absolute;left:12px;bottom:11px;z-index:2;
-  font-size:9px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--bone);
-  background:rgba(90,16,36,.76);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-  border:1px solid rgba(201,96,123,.28);
-  padding:4px 10px;border-radius:999px;
-  opacity:0;transform:translateY(7px);
+  position:absolute;left:0;right:0;bottom:0;z-index:2;
+  padding:14px 16px;
+  font-size:12px;letter-spacing:.14em;
+  color:#fff;text-align:left;
+  text-shadow:0 1px 14px rgba(0,0,0,.55);
+  opacity:0;transform:translateY(5px);
   transition:opacity .45s var(--ease),transform .45s var(--ease-out);
 }
 .tile:hover .tile__cat,.tile:focus-visible .tile__cat{opacity:1;transform:translateY(0)}
-
-.tile__zoom{
-  position:absolute;right:11px;bottom:11px;z-index:2;
-  width:30px;height:30px;border-radius:50%;
-  display:grid;place-items:center;
-  background:rgba(7,4,5,.5);border:1px solid rgba(234,218,203,.3);
-  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-  opacity:0;transform:scale(.82);
-  transition:opacity .45s var(--ease),transform .45s var(--ease-out);
-}
-.tile__zoom svg{width:12px;height:12px;stroke:var(--bone);fill:none;stroke-width:1.6}
-.tile:hover .tile__zoom,.tile:focus-visible .tile__zoom{opacity:1;transform:scale(1)}
 
 /* reveal: the wall fades its tiles in column order, not row order */
 .tile.rv{opacity:0;transform:translateY(22px)}
