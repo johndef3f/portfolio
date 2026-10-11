@@ -150,24 +150,32 @@ section{position:relative;z-index:2}
   overflow:hidden;
 }
 /* full-bleed MECHA-SPIN loop behind the wordmark, held at 30% */
+/* No z-index here on purpose: giving this box its own stacking context
+   would trap the video's blend mode inside it. DOM order already puts it
+   under the hero content, which carries z-index:1. */
 .hero__bg{
   position:absolute;top:0;bottom:0;
   left:50%;transform:translateX(-50%);
   width:100vw;
-  overflow:hidden;z-index:0;pointer-events:none;
+  overflow:hidden;pointer-events:none;
 }
 .hero__bg video{
   width:100%;height:100%;object-fit:cover;
+  /* The clip is a lit object on pure black, and #000 is darker than the
+     page ground, so at any opacity the frame reads as a dark rectangle.
+     `screen` makes black drop out entirely and keeps only the lit pixels,
+     so the machine floats on the page with no edge at all — and the clip
+     can then run at full strength without a visible boundary. */
+  mix-blend-mode:screen;
   opacity:.8;
-  /* fade the loop out at the bottom so it meets the page ground cleanly */
-  -webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 97%);
-  mask-image:linear-gradient(to bottom,#000 55%,transparent 97%);
 }
+/* Under `screen` only the bright pixels survive, so the veil no longer has
+   to fight a full-frame image — it just protects the headline. */
 .hero__veil{
   position:absolute;inset:0;
   background:
-    linear-gradient(to right,rgba(7,4,5,.78) 0%,rgba(7,4,5,.3) 52%,rgba(7,4,5,.62) 100%),
-    linear-gradient(to bottom,rgba(7,4,5,.68) 0%,transparent 34%);
+    linear-gradient(to right,rgba(7,4,5,.5) 0%,rgba(7,4,5,.12) 54%,rgba(7,4,5,.34) 100%),
+    linear-gradient(to bottom,rgba(7,4,5,.55) 0%,transparent 30%,transparent 72%,rgba(7,4,5,.5) 100%);
 }
 /* keep every hero element above the backdrop */
 .hero__wordmark,.hero__grid,.hero__foot,.hero__scroll{position:relative;z-index:1}
