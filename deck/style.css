@@ -1,0 +1,239 @@
+/* ============================================================
+   Chen En-Yu — 16:9 presentation deck
+   Fixed 1920x1080 stages, built for screenshot export
+   ============================================================ */
+
+:root{
+  --ink-900:#070405;
+  --ink-850:#0B0608;
+  --ink-800:#110A0D;
+  --ink-700:#170E12;
+  --line:rgba(234,218,203,.13);
+  --line-soft:rgba(234,218,203,.07);
+
+  --wine-900:#3A0A17;
+  --wine-700:#5C1024;
+  --wine-500:#8A1B38;
+  --wine-400:#A82546;
+  --rose:#C9607B;
+
+  --bone:#EADACB;
+  --bone-dim:#B9A696;
+  --bone-faint:#7D6D62;
+
+  --serif:"Playfair Display","Noto Serif TC",Georgia,serif;
+  --sans:"Inter","Noto Sans TC","Segoe UI",system-ui,sans-serif;
+  --script:"Cormorant Garamond","Noto Serif TC",Georgia,serif;
+
+  --W:1920px;
+  --H:1080px;
+  --pad:96px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#000}
+img{display:block;max-width:100%}
+h1,h2,h3,h4,p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+
+/* ---------- stage ---------- */
+.slide{
+  position:relative;
+  width:var(--W);height:var(--H);
+  overflow:hidden;
+  background:var(--ink-900);
+  color:var(--bone);
+  font-family:var(--sans);
+  display:flex;flex-direction:column;
+}
+/* page flow for on-screen review; export renders one at a time */
+body.review{background:#1a1416;padding:40px 0}
+body.review .slide{margin:0 auto 40px;box-shadow:0 30px 80px -40px #000}
+
+.slide__glow{position:absolute;inset:0;pointer-events:none;z-index:0}
+.slide__glow::before,.slide__glow::after{
+  content:"";position:absolute;border-radius:50%;filter:blur(130px);
+}
+.slide__glow::before{
+  width:900px;height:900px;top:-280px;right:-240px;
+  background:radial-gradient(circle,rgba(138,27,56,.34),transparent 68%);
+}
+.slide__glow::after{
+  width:760px;height:760px;bottom:-280px;left:-220px;
+  background:radial-gradient(circle,rgba(58,10,23,.52),transparent 70%);
+}
+.slide__grain{
+  position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.03;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.slide__in{position:relative;z-index:2;flex:1;min-height:0;display:flex;flex-direction:column}
+
+/* ---------- running head / foot ---------- */
+.rail{
+  position:absolute;left:var(--pad);right:var(--pad);z-index:3;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:14px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--bone-faint);
+}
+.rail--top{top:46px}
+.rail--bot{bottom:42px}
+.rail b{font-weight:500;color:var(--bone-dim)}
+.rail .num{font-family:var(--serif);font-size:17px;letter-spacing:.1em;color:var(--bone-dim)}
+.rail__line{flex:1;height:1px;background:var(--line);margin:0 26px}
+
+/* ---------- cover ---------- */
+.cover{justify-content:center;padding:0 var(--pad)}
+.cover__word{
+  font-family:var(--serif);font-weight:500;
+  font-size:238px;line-height:.82;letter-spacing:-.022em;
+  display:flex;justify-content:space-between;width:100%;
+  color:var(--bone);
+}
+.cover__row{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:60px;margin-top:62px;
+}
+.cover__lead{
+  font-family:var(--serif);font-size:42px;line-height:1.3;max-width:19ch;
+}
+.cover__lead em{font-style:italic;color:var(--rose)}
+.cover__meta{text-align:right;font-size:16px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--bone-faint);line-height:2.1}
+.cover__sig{
+  font-family:var(--script);font-style:italic;font-weight:300;
+  font-size:66px;color:var(--rose);line-height:1;margin-bottom:10px;
+  text-transform:none;letter-spacing:0;
+}
+
+/* ---------- section heading ---------- */
+.kicker{
+  font-size:15px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--bone-dim);display:flex;align-items:center;gap:16px;margin-bottom:20px;
+}
+.kicker::before{content:"";width:40px;height:1px;background:var(--wine-400);flex:none}
+.h1{font-family:var(--serif);font-weight:500;font-size:92px;line-height:1.03;letter-spacing:-.015em}
+.h1 em{font-style:italic;color:var(--rose)}
+.h2{
+  font-family:var(--serif);font-weight:500;font-size:62px;
+  line-height:1.1;letter-spacing:-.01em;
+  text-wrap:balance;          /* keeps long bilingual titles from leaving one orphan */
+}
+.sub{font-size:19px;letter-spacing:.13em;text-transform:uppercase;color:var(--wine-400);margin-bottom:14px}
+
+/* ---------- work slide: media + panel ---------- */
+.work{
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:1fr 620px;
+  gap:60px;padding:132px var(--pad) 104px;
+}
+.work--tall{grid-template-columns:1fr 560px}
+/* Stills keep their own aspect — a 2:1 frame must not be cropped to fit a
+   tall cell. Absolute inset + margin:auto is the one centring method where
+   percentage max-width/max-height always resolve. */
+.work__media{position:relative;min-height:0}
+.work__media img{
+  position:absolute;inset:0;margin:auto;
+  width:auto;height:auto;max-width:100%;max-height:100%;
+  object-fit:contain;
+  border-radius:4px;border:1px solid var(--line-soft);
+  background:var(--ink-800);
+}
+.work__panel{display:flex;flex-direction:column;min-height:0}
+.work__desc{
+  font-size:19px;line-height:1.82;color:var(--bone-dim);margin-top:22px;
+}
+.work__tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.work__tags span{
+  font-size:14px;letter-spacing:.1em;color:var(--bone-faint);
+  border:1px solid var(--line);border-radius:2px;padding:7px 14px;
+}
+.role{margin-top:auto;padding-top:28px;border-top:1px solid var(--line)}
+.role > b{
+  display:block;margin-bottom:14px;
+  font-size:15px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--wine-400);
+}
+.role__list{display:flex;flex-wrap:wrap;gap:9px}
+.role__list span{
+  font-size:16px;line-height:1.3;color:var(--bone);
+  border:1px solid rgba(168,37,70,.34);background:rgba(90,16,36,.3);
+  border-radius:2px;padding:8px 15px;
+}
+.role--dense .role__list span{font-size:15px;padding:7px 13px}
+
+/* multi-clip strip under the main media */
+.strip{display:grid;gap:14px;margin-top:14px;flex:none}
+.strip--2{grid-template-columns:repeat(2,1fr)}
+.strip--3{grid-template-columns:repeat(3,1fr)}
+.strip--6{grid-template-columns:repeat(6,1fr)}
+.strip figure{margin:0;border-radius:3px;overflow:hidden;border:1px solid var(--line-soft);
+  background:var(--ink-800)}
+.strip img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.work__stack{display:flex;flex-direction:column;min-height:0}
+.work__stack .work__media{flex:1;min-height:0}
+
+/* ---------- gallery slide ---------- */
+.gal{
+  flex:1;min-height:0;display:flex;flex-direction:column;
+  padding:132px var(--pad) 104px;
+}
+.gal__head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:34px;flex:none}
+.gal__grid{flex:1;min-height:0;display:grid;gap:18px}
+.gal__grid figure{
+  margin:0;border-radius:3px;overflow:hidden;position:relative;
+  background:var(--ink-800);border:1px solid var(--line-soft);
+}
+.gal__grid img{width:100%;height:100%;object-fit:cover}
+.g1{grid-template-columns:1fr}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr)}
+.g6{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr)}
+.g8{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr)}
+.g9{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr)}
+/* Portrait sets go in a single row so each frame gets the full stage height
+   instead of sitting small inside a landscape cell. */
+.gp2{grid-template-columns:repeat(2,1fr);grid-template-rows:1fr}
+.gp3{grid-template-columns:repeat(3,1fr);grid-template-rows:1fr}
+.gp4{grid-template-columns:repeat(4,1fr);grid-template-rows:1fr}
+.gp5{grid-template-columns:repeat(5,1fr);grid-template-rows:1fr}
+.gp6{grid-template-columns:repeat(6,1fr);grid-template-rows:1fr}
+.gal__grid--portrait figure{
+  background:transparent;border:0;
+  display:flex;align-items:center;justify-content:center;
+}
+/* width:auto makes the element track the image itself, so the border sits
+   on the artwork rather than around an oversized box */
+.gal__grid--portrait img{
+  width:auto;height:100%;max-width:100%;
+  object-fit:contain;
+  border-radius:3px;border:1px solid var(--line-soft);
+}
+
+/* ---------- about / closing ---------- */
+.about{flex:1;display:grid;grid-template-columns:1.08fr .92fr;gap:84px;
+  padding:150px var(--pad) 110px;align-items:start}
+.about__body{font-family:var(--serif);font-size:27px;line-height:1.72;color:var(--bone-dim)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px}
+.stat{border:1px solid var(--line);border-radius:3px;padding:22px 24px;background:rgba(31,19,24,.4)}
+.stat b{display:block;font-family:var(--serif);font-size:44px;line-height:1;color:var(--bone)}
+.stat span{font-size:14px;letter-spacing:.17em;text-transform:uppercase;color:var(--bone-faint);
+  margin-top:9px;display:block}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.tool{display:flex;align-items:center;gap:12px;padding:14px 16px;
+  border:1px solid var(--line-soft);border-radius:3px;background:rgba(31,19,24,.4)}
+.tool i{
+  width:34px;height:34px;flex:none;border-radius:3px;display:grid;place-items:center;
+  background:linear-gradient(145deg,var(--wine-700),var(--wine-900));
+  font-family:var(--serif);font-style:normal;font-size:14px;color:var(--bone);
+}
+.tool span{font-size:14px;letter-spacing:.09em;color:var(--bone-dim)}
+
+.close{flex:1;display:flex;flex-direction:column;justify-content:center;
+  align-items:center;text-align:center;padding:0 var(--pad);gap:30px}
+.close__h{font-family:var(--serif);font-size:104px;line-height:1.06}
+.close__h em{display:block;font-family:var(--script);font-style:italic;
+  color:var(--rose);font-size:1.12em;font-weight:300;margin-top:8px}
+.close__rows{display:flex;gap:56px;margin-top:18px}
+.close__row{display:flex;align-items:center;gap:14px;font-size:22px;color:var(--bone-dim)}
+.close__row svg{width:22px;height:22px;stroke:var(--wine-400);fill:none;stroke-width:1.4}
